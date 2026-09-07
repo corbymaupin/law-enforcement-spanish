@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Law Enforcement Spanish</title>
+<meta name="description" content="Spanish phrases for police and detention officers working with Spanish-speaking detainees and inmates.">
+<meta name="apple-mobile-web-app-title" content="LE Spanish">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b0d10">
+<style>
+  :root {
+    --bg:         #0b0d10;
+    --bg-elev:    #14171c;
+    --card:       #1b1f26;
+    --card-lit:   #232833;
+    --border:     #2a2f38;
+    --text:       #f5f6f8;
+    --text-dim:   #9aa3af;
+    --text-faint: #6b7280;
+    --blue:        #2563EB;
+    --blue-lit:    #3B82F6;
+    --blue-deep:   #1D4ED8;
+    --blue-dim:    rgba(37, 99, 235, 0.14);
+    --blue-accent: #60A5FA;
+    --green:      #22C55E;
+    --green-deep: #15803D;
+    --red:        #EF4444;
+    --red-deep:   #B91C1C;
+    --radius:     14px;
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  #app {
+    width: 100%;
+    max-width: 560px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 84px;
+  }
+
+  header.top-bar {
+    padding: 20px 20px 12px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--bg-elev), var(--bg));
+  }
+  header.top-bar h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+  header.top-bar h1 .badge-dot {
+    display: inline-block;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--blue-lit);
+    margin-right: 8px;
+    box-shadow: 0 0 8px var(--blue-lit);
+  }
+  header.top-bar p {
+    margin: 4px 0 0;
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+
+  main {
+    flex: 1;
+    padding: 18px 20px 24px;
+  }
+
+  section.screen[hidden] { display: none; }
+
+  /* ---- chips ---- */
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 18px;
+  }
+  .chip {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 7px 13px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    transition: background .15s, color .15s, border-color .15s;
+  }
+  .chip[aria-pressed="true"] {
+    background: var(--blue-dim);
+    border-color: var(--blue-lit);
+    color: var(--blue-accent);
+  }
+
+  /* ---- buttons ---- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--text);
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: transform .06s ease, filter .12s ease;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary {
+    width: 100%;
+    background: linear-gradient(180deg, var(--blue-lit), var(--blue));
+    box-shadow: 0 3px 0 var(--blue-deep), 0 6px 14px rgba(37,99,235,.35);
+    color: white;
+    font-size: 16px;
+    padding: 16px 18px;
+  }
+  .btn-primary:active {
+    box-shadow: 0 1px 0 var(--blue-deep);
+    transform: translateY(2px);
+  }
+  .btn-secondary {
+    width: 100%;
+    background: var(--card-lit);
+    color: var(--text-dim);
+    margin-top: 10px;
+  }
+  .btn-ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+  }
+  .btn-danger {
+    background: var(--card-lit);
+    color: var(--red);
+    border-color: var(--red-deep);
+  }
+  .btn-row { display: flex; gap: 10px; margin-top: 14px; }
+  .btn-row .btn { flex: 1; }
+  .btn-miss {
+    background: linear-gradient(180deg, #F05252, var(--red));
+    box-shadow: 0 3px 0 var(--red-deep);
+    color: white;
+  }
+  .btn-got {
+    background: linear-gradient(180deg, #34D06B, var(--green));
+    box-shadow: 0 3px 0 var(--green-deep);
+    color: white;
+  }
+  .btn-miss:active, .btn-got:active { box-shadow: none; transform: translateY(3px); }
+  .btn:disabled { opacity: .45; cursor: default; }
+
+  /* ---- home stats ---- */
+  .home-stats {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  .home-stats .stat { text-align: center; flex: 1; }
+  .home-stats .stat .n { font-size: 24px; font-weight: 800; color: var(--blue-accent); }
+  .home-stats .stat .l { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .05em; margin-top: 2px; }
+
+  /* ---- study card ---- */
+  .session-progress {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .card-face {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 20px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+  }
+  .trade-badge {
+    align-self: flex-start;
+    background: var(--blue-dim);
+    color: var(--blue-accent);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  .prompt-lang-label {
+    color: var(--text-faint);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 6px;
+  }
+  .prompt-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35;
+    flex: 1;
+  }
+  .answer-block {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--border);
+  }
+  .answer-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue-accent);
+    line-height: 1.35;
+  }
+  .region-note {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+  .speak-btn {
+    margin-top: 12px;
+    background: var(--card-lit);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 9px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* ---- gauge (leitner boxes 1-5) ---- */
+  .gauge {
+    display: flex;
+    gap: 5px;
+    margin-top: 16px;
+  }
+  .gauge .bar {
+    flex: 1;
+    height: 7px;
+    border-radius: 4px;
+    background: var(--border);
+  }
+  .gauge .bar.filled {
+    background: linear-gradient(90deg, var(--blue), var(--blue-accent));
+  }
+
+  .empty-panel, .complete-panel {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--text-dim);
+  }
+  .empty-panel h2, .complete-panel h2 { color: var(--text); margin-bottom: 8px; }
+
+  /* ---- browse ---- */
+  .search-box {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .browse-list { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+  .browse-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 13px 15px;
+  }
+  .browse-item .row1 { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .browse-item .en { font-weight: 700; font-size: 14px; }
+  .browse-item .es { color: var(--blue-accent); font-weight: 600; font-size: 14px; margin-top: 3px; }
+  .browse-item .region { color: var(--text-dim); font-size: 12px; margin-top: 4px; font-style: italic; }
+  .box-pill {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--card-lit);
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .no-results { text-align: center; color: var(--text-dim); padding: 30px 0; }
+
+  /* ---- stats ---- */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .stats-tile {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+  .stats-tile .n { font-size: 26px; font-weight: 800; color: var(--blue-accent); }
+  .stats-tile .l { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+  .box-dist { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 20px; }
+  .box-dist h3 { margin: 0 0 12px; font-size: 14px; color: var(--text-dim); }
+  .box-dist-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
+  .box-dist-row .label { width: 70px; color: var(--text-dim); flex-shrink: 0; }
+  .box-dist-row .track { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .box-dist-row .fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--blue-accent)); }
+  .box-dist-row .count { width: 30px; text-align: right; color: var(--text-dim); flex-shrink: 0; }
+
+  /* ---- tab bar ---- */
+  nav.tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    background: var(--bg-elev);
+    border-top: 1px solid var(--border);
+    padding: 8px 6px calc(8px + env(safe-area-inset-bottom));
+  }
+  nav.tab-bar button {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--text-faint);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 0;
+    cursor: pointer;
+  }
+  nav.tab-bar button .icon { font-size: 19px; }
+  nav.tab-bar button.active { color: var(--blue-accent); }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <header class="top-bar">
+    <h1><span class="badge-dot"></span>Law Enforcement Spanish</h1>
+    <p>Intake, booking &amp; facility phrases for Spanish-speaking detainees</p>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section class="screen" id="screen-home">
+      <div class="home-stats">
+        <div class="stat"><div class="n" id="home-due">0</div><div class="l">Due Now</div></div>
+        <div class="stat"><div class="n" id="home-new">0</div><div class="l">New Today</div></div>
+        <div class="stat"><div class="n" id="home-total">0</div><div class="l">Total Cards</div></div>
+      </div>
+
+      <div class="chip-row" id="home-chips"></div>
+
+      <button class="btn btn-primary" id="btn-start-review">Start Reviewing</button>
+      <button class="btn btn-secondary" id="btn-practice-all">Practice Ahead (ignore schedule)</button>
+    </section>
+
+    <!-- STUDY -->
+    <section class="screen" id="screen-study" hidden>
+      <div id="study-active">
+        <div class="session-progress" id="study-progress">Card 1 of 1</div>
+        <div class="card-face">
+          <div class="trade-badge" id="study-trade">Intake</div>
+          <div>
+            <div class="prompt-lang-label" id="study-prompt-label">English</div>
+            <div class="prompt-text" id="study-prompt-text">&nbsp;</div>
+          </div>
+          <div class="answer-block" id="study-answer-block" hidden>
+            <div class="prompt-lang-label" id="study-answer-label">Español</div>
+            <div class="answer-text" id="study-answer-text">&nbsp;</div>
+            <div class="region-note" id="study-region-note" hidden></div>
+            <button class="speak-btn" id="study-speak">🔊 Hear it spoken</button>
+          </div>
+          <div class="gauge" id="study-gauge"></div>
+        </div>
+        <div class="btn-row" id="study-flip-row">
+          <button class="btn btn-primary" id="study-flip" style="width:100%">Show Answer</button>
+        </div>
+        <div class="btn-row" id="study-answer-row" hidden>
+          <button class="btn btn-miss" id="study-miss">Missed it</button>
+          <button class="btn btn-got" id="study-got">Got it</button>
+        </div>
+      </div>
+
+      <div class="empty-panel" id="study-empty" hidden>
+        <h2>Nothing due right now</h2>
+        <p>Great work — check back later, or practice ahead from the Home screen.</p>
+        <button class="btn btn-ghost" id="empty-back-home">Back to Home</button>
+      </div>
+
+      <div class="complete-panel" id="study-complete" hidden>
+        <h2>Session complete</h2>
+        <p id="complete-summary"></p>
+        <button class="btn btn-primary" id="complete-back-home">Back to Home</button>
+      </div>
+    </section>
+
+    <!-- BROWSE -->
+    <section class="screen" id="screen-browse" hidden>
+      <input type="text" class="search-box" id="browse-search" placeholder="Search English or Español...">
+      <div class="chip-row" id="browse-chips"></div>
+      <div class="browse-list" id="browse-list"></div>
+    </section>
+
+    <!-- STATS -->
+    <section class="screen" id="screen-stats" hidden>
+      <div class="stats-grid">
+        <div class="stats-tile"><div class="n" id="stat-streak">0</div><div class="l">Day Streak</div></div>
+        <div class="stats-tile"><div class="n" id="stat-reviews">0</div><div class="l">Total Reviews</div></div>
+        <div class="stats-tile"><div class="n" id="stat-accuracy">0%</div><div class="l">Accuracy</div></div>
+        <div class="stats-tile"><div class="n" id="stat-mastered">0</div><div class="l">Mastered (Box 5)</div></div>
+      </div>
+      <div class="box-dist">
+        <h3>Progress by Box</h3>
+        <div id="box-dist-rows"></div>
+      </div>
+      <button class="btn btn-danger" id="btn-reset-progress">Reset All Progress</button>
+    </section>
+
+  </main>
+
+  <nav class="tab-bar">
+    <button class="tab-btn active" data-screen="home"><span class="icon">🏠</span>Home</button>
+    <button class="tab-btn" data-screen="study"><span class="icon">🗂️</span>Study</button>
+    <button class="tab-btn" data-screen="browse"><span class="icon">🔎</span>Browse</button>
+    <button class="tab-btn" data-screen="stats"><span class="icon">📊</span>Stats</button>
+  </nav>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var STORAGE_KEY = "law-enforcement-spanish-v1";
+  var NEW_PER_DAY = 12;
+  var INTERVALS = [1, 2, 4, 8, 16]; // days, indexed by box-1
+
+  var TRADES = ["Intake", "Medical", "Rights", "Commands", "Facility", "De-escalation", "Questions", "Paperwork", "Phrases"];
+
+  var SEED_TERMS = [
+    // INTAKE
+    { en: "What is your full name?", es: "¿Cuál es su nombre completo?", region: "", trade: "Intake" },
+    { en: "What is your date of birth?", es: "¿Cuál es su fecha de nacimiento?", region: "", trade: "Intake" },
+    { en: "Where were you born?", es: "¿Dónde nació?", region: "", trade: "Intake" },
+    { en: "What is your current address?", es: "¿Cuál es su dirección actual?", region: "", trade: "Intake" },
+    { en: "Do you have a social security number?", es: "¿Tiene un número de seguro social?", region: "", trade: "Intake" },
+    { en: "What is your social security number?", es: "¿Cuál es su número de seguro social?", region: "", trade: "Intake" },
+    { en: "Do you have a driver's license?", es: "¿Tiene una licencia de conducir?", region: "", trade: "Intake" },
+    { en: "What is your driver's license number?", es: "¿Cuál es el número de su licencia de conducir?", region: "", trade: "Intake" },
+    { en: "Do you have any aliases or nicknames?", es: "¿Tiene algún alias o apodo?", region: "", trade: "Intake" },
+    { en: "What phone number can we reach you at?", es: "¿A qué número de teléfono podemos contactarlo?", region: "", trade: "Intake" },
+    { en: "Who should we call as an emergency contact?", es: "¿A quién debemos llamar en caso de emergencia?", region: "", trade: "Intake" },
+    { en: "What is their phone number?", es: "¿Cuál es su número de teléfono?", region: "", trade: "Intake" },
+    { en: "Are you gang affiliated?", es: "¿Tiene afiliación a pandillas?", region: "", trade: "Intake" },
+    { en: "Do you have any gang tattoos?", es: "¿Tiene tatuajes de pandilla?", region: "", trade: "Intake" },
+    { en: "What gang are you affiliated with?", es: "¿Con qué pandilla está afiliado?", region: "", trade: "Intake" },
+    { en: "Do you need an interpreter for court proceedings?", es: "¿Necesita un intérprete para los procedimientos judiciales?", region: "", trade: "Intake" },
+    { en: "Do you have an attorney?", es: "¿Tiene un abogado?", region: "", trade: "Intake" },
+    { en: "What is your attorney's name and phone number?", es: "¿Cuál es el nombre y número de teléfono de su abogado?", region: "", trade: "Intake" },
+    { en: "Are you intoxicated on alcohol?", es: "¿Está intoxicado por alcohol?", region: "", trade: "Intake" },
+    { en: "Have you used drugs?", es: "¿Ha usado drogas?", region: "", trade: "Intake" },
+    { en: "What type of drugs?", es: "¿Qué tipo de drogas?", region: "", trade: "Intake" },
+    { en: "When did you last use?", es: "¿Cuándo fue la última vez que usó?", region: "", trade: "Intake" },
+    { en: "We will inventory your property.", es: "Inventaremos sus pertenencias.", region: "", trade: "Intake" },
+    { en: "Do you understand?", es: "¿Entiende?", region: "", trade: "Intake" },
+    { en: "Sign here.", es: "Firme aquí.", region: "", trade: "Intake" },
+    { en: "Print your name.", es: "Escriba su nombre en letra de molde.", region: "", trade: "Intake" },
+    { en: "Date.", es: "Fecha.", region: "", trade: "Intake" },
+
+    // MEDICAL
+    { en: "Are you sick or injured?", es: "¿Está enfermo o lesionado?", region: "", trade: "Medical" },
+    { en: "Are you aware of any serious medical or mental health issues?", es: "¿Está consciente de algún problema médico o de salud mental grave?", region: "", trade: "Medical" },
+    { en: "Explain.", es: "Explique.", region: "", trade: "Medical" },
+    { en: "Do you have any medical allergies?", es: "¿Tiene alguna alergia médica?", region: "", trade: "Medical" },
+    { en: "What are you allergic to?", es: "¿A qué es alérgico?", region: "", trade: "Medical" },
+    { en: "Do you take prescription medications?", es: "¿Toma medicamentos recetados?", region: "", trade: "Medical" },
+    { en: "What medications do you take?", es: "¿Qué medicamentos toma?", region: "", trade: "Medical" },
+    { en: "Do you need your medication?", es: "¿Necesita su medicamento?", region: "", trade: "Medical" },
+    { en: "Do you have heart disease?", es: "¿Tiene enfermedad del corazón?", region: "", trade: "Medical" },
+    { en: "Do you have high blood pressure?", es: "¿Tiene presión arterial alta?", region: "", trade: "Medical" },
+    { en: "Do you have asthma?", es: "¿Tiene asma?", region: "", trade: "Medical" },
+    { en: "Do you have diabetes?", es: "¿Tiene diabetes?", region: "", trade: "Medical" },
+    { en: "Do you have epilepsy or seizures?", es: "¿Tiene epilepsia o convulsiones?", region: "", trade: "Medical" },
+    { en: "Do you have hepatitis?", es: "¿Tiene hepatitis?", region: "", trade: "Medical" },
+    { en: "Do you have a history of tuberculosis?", es: "¿Tiene antecedentes de tuberculosis?", region: "", trade: "Medical" },
+    { en: "Do you have a history of venereal disease?", es: "¿Tiene antecedentes de enfermedades venéreas?", region: "", trade: "Medical" },
+    { en: "Do you have HIV or AIDS?", es: "¿Tiene VIH o SIDA?", region: "", trade: "Medical" },
+    { en: "Have you been tested for HIV?", es: "¿Ha sido examinado para VIH?", region: "", trade: "Medical" },
+    { en: "Do you have ulcers?", es: "¿Tiene úlceras?", region: "", trade: "Medical" },
+    { en: "Do you have arthritis?", es: "¿Tiene artritis?", region: "", trade: "Medical" },
+    { en: "Do you have a painful dental condition?", es: "¿Tiene una condición dental dolorosa?", region: "", trade: "Medical" },
+    { en: "Do you wear glasses or contacts?", es: "¿Usa gafas o lentes de contacto?", region: "", trade: "Medical" },
+    { en: "Do you wear glasses?", es: "¿Usa gafas?", region: "", trade: "Medical" },
+    { en: "Do you have any physical handicap we should know about?", es: "¿Tiene alguna discapacidad física que debamos saber?", region: "", trade: "Medical" },
+    { en: "Have you ever felt constantly on guard?", es: "¿Alguna vez se ha sentido constantemente en guardia?", region: "", trade: "Medical" },
+    { en: "Have you felt distanced from others?", es: "¿Se ha sentido distante de otros?", region: "", trade: "Medical" },
+    { en: "Do you have frequent worries you can't get rid of?", es: "¿Tiene preocupaciones frecuentes que no puede dejar ir?", region: "", trade: "Medical" },
+    { en: "Do you hold grudges?", es: "¿Guarda rencores?", region: "", trade: "Medical" },
+    { en: "Do you get irritable easily?", es: "¿Se irrita fácilmente?", region: "", trade: "Medical" },
+    { en: "Have you been in a hospital for psychiatric reasons?", es: "¿Ha estado en un hospital por razones psiquiátricas?", region: "", trade: "Medical" },
+    { en: "Are you pregnant?", es: "¿Está embarazada?", region: "", trade: "Medical" },
+    { en: "Are you on birth control?", es: "¿Usa anticonceptivos?", region: "", trade: "Medical" },
+    { en: "Do you have a special diet prescribed by a physician?", es: "¿Tiene una dieta especial prescrita por un médico?", region: "", trade: "Medical" },
+    { en: "Do you see a physician?", es: "¿Ve a un médico?", region: "", trade: "Medical" },
+    { en: "When did you last see a physician?", es: "¿Cuándo fue la última vez que vio a un médico?", region: "", trade: "Medical" },
+
+    // RIGHTS
+    { en: "You have the right to remain silent.", es: "Tiene derecho a permanecer en silencio.", region: "", trade: "Rights" },
+    { en: "Anything you say can be used against you in a court of law.", es: "Todo lo que diga puede ser usado en su contra en un tribunal de justicia.", region: "", trade: "Rights" },
+    { en: "You have the right to speak with an attorney.", es: "Tiene derecho a hablar con un abogado.", region: "", trade: "Rights" },
+    { en: "You have the right to have an attorney present.", es: "Tiene derecho a tener un abogado presente.", region: "", trade: "Rights" },
+    { en: "If you cannot afford an attorney, one will be provided for you.", es: "Si no puede pagar un abogado, se le designará uno a expensas públicas.", region: "", trade: "Rights" },
+    { en: "Do you understand these rights?", es: "¿Entiende estos derechos?", region: "", trade: "Rights" },
+    { en: "Do you wish to speak with an attorney?", es: "¿Desea hablar con un abogado?", region: "", trade: "Rights" },
+    { en: "Are you willing to talk to us without an attorney?", es: "¿Está dispuesto a hablar con nosotros sin un abogado?", region: "", trade: "Rights" },
+    { en: "You can stop answering questions at any time.", es: "Puede dejar de responder preguntas en cualquier momento.", region: "", trade: "Rights" },
+    { en: "Do you want to remain silent?", es: "¿Quiere permanecer en silencio?", region: "", trade: "Rights" },
+    { en: "I cannot question you further if you invoke your right to silence.", es: "No puedo hacerle más preguntas si invoca su derecho al silencio.", region: "", trade: "Rights" },
+    { en: "Do you want to talk to a lawyer?", es: "¿Quiere hablar con un abogado?", region: "", trade: "Rights" },
+    { en: "We will stop questioning if you ask for a lawyer.", es: "Dejaremos de hacerle preguntas si pide un abogado.", region: "", trade: "Rights" },
+    { en: "You have the right to contact your consulate.", es: "Tiene derecho a contactar a su consulado.", region: "", trade: "Rights" },
+    { en: "Would you like to contact your consulate?", es: "¿Desea contactar a su consulado?", region: "", trade: "Rights" },
+    { en: "Are you waiving your rights?", es: "¿Está renunciando a sus derechos?", region: "", trade: "Rights" },
+    { en: "Do you consent to a search?", es: "¿Consiente en una búsqueda?", region: "", trade: "Rights" },
+    { en: "We need your permission to search your property.", es: "Necesitamos su permiso para buscar su propiedad.", region: "", trade: "Rights" },
+
+    // COMMANDS
+    { en: "Listen to me.", es: "Escúcheme.", region: "", trade: "Commands" },
+    { en: "Do you understand?", es: "¿Entiende?", region: "", trade: "Commands" },
+    { en: "Follow me.", es: "Sígame.", region: "", trade: "Commands" },
+    { en: "Follow the rules.", es: "Siga las reglas.", region: "", trade: "Commands" },
+    { en: "Do not move.", es: "No se mueva.", region: "", trade: "Commands" },
+    { en: "Stay here.", es: "Quédese aquí.", region: "", trade: "Commands" },
+    { en: "Sit down.", es: "Siéntese.", region: "", trade: "Commands" },
+    { en: "Stand up.", es: "Levántese.", region: "", trade: "Commands" },
+    { en: "Put your hands up.", es: "Levante las manos.", region: "", trade: "Commands" },
+    { en: "Put your hands down.", es: "Baje las manos.", region: "", trade: "Commands" },
+    { en: "Keep your hands where I can see them.", es: "Mantenga las manos donde pueda verlas.", region: "", trade: "Commands" },
+    { en: "Turn around.", es: "Gírese.", region: "", trade: "Commands" },
+    { en: "Face the wall.", es: "Mire hacia la pared.", region: "", trade: "Commands" },
+    { en: "Comply with my orders.", es: "Cumpla con mis órdenes.", region: "", trade: "Commands" },
+    { en: "I will use force if necessary.", es: "Usaré la fuerza si es necesario.", region: "", trade: "Commands" },
+    { en: "Do not resist.", es: "No resista.", region: "", trade: "Commands" },
+    { en: "Stop resisting.", es: "Deje de resistir.", region: "", trade: "Commands" },
+    { en: "Relax.", es: "Relájese.", region: "", trade: "Commands" },
+    { en: "Calm down.", es: "Cálmese.", region: "", trade: "Commands" },
+    { en: "I am going to handcuff you.", es: "Lo voy a esposar.", region: "Mexico: Lo voy a poner las esposas", trade: "Commands" },
+    { en: "Put your hands behind your back.", es: "Ponga las manos detrás de la espalda.", region: "", trade: "Commands" },
+    { en: "Do not try to escape.", es: "No intente escapar.", region: "", trade: "Commands" },
+    { en: "I am going to search you.", es: "Voy a registrarlo.", region: "", trade: "Commands" },
+    { en: "Do you have any weapons?", es: "¿Tiene armas?", region: "", trade: "Commands" },
+    { en: "Do you have any sharp objects?", es: "¿Tiene objetos afilados?", region: "", trade: "Commands" },
+    { en: "Empty your pockets.", es: "Vacíe sus bolsillos.", region: "", trade: "Commands" },
+    { en: "Remove your shoes.", es: "Quítese los zapatos.", region: "", trade: "Commands" },
+    { en: "Remove your belt.", es: "Quítese el cinturón.", region: "", trade: "Commands" },
+    { en: "No talking.", es: "No hable.", region: "", trade: "Commands" },
+    { en: "Be quiet.", es: "Calle.", region: "", trade: "Commands" },
+    { en: "Go to your cell.", es: "Vaya a su celda.", region: "", trade: "Commands" },
+
+    // FACILITY
+    { en: "You are in protective custody.", es: "Está en custodia protectora.", region: "", trade: "Facility" },
+    { en: "This is your cell.", es: "Esta es su celda.", region: "", trade: "Facility" },
+    { en: "You will be housed here.", es: "Será alojado aquí.", region: "", trade: "Facility" },
+    { en: "Do you need anything?", es: "¿Necesita algo?", region: "", trade: "Facility" },
+    { en: "You have a cellmate.", es: "Tiene un compañero de celda.", region: "", trade: "Facility" },
+    { en: "Your cellmate is peaceful.", es: "Su compañero de celda es pacífico.", region: "", trade: "Facility" },
+    { en: "There are rules to follow in your cell.", es: "Hay reglas que seguir en su celda.", region: "", trade: "Facility" },
+    { en: "Meals are served at specific times.", es: "Las comidas se sirven a horas específicas.", region: "", trade: "Facility" },
+    { en: "Breakfast is at 6 a.m.", es: "El desayuno es a las 6 de la mañana.", region: "", trade: "Facility" },
+    { en: "Lunch is at noon.", es: "El almuerzo es al mediodía.", region: "", trade: "Facility" },
+    { en: "Dinner is at 5 p.m.", es: "La cena es a las 5 de la tarde.", region: "", trade: "Facility" },
+    { en: "Do not waste food.", es: "No malgaste comida.", region: "", trade: "Facility" },
+    { en: "You cannot bring outside food.", es: "No puede traer comida de afuera.", region: "", trade: "Facility" },
+    { en: "Medical care is available.", es: "La atención médica está disponible.", region: "", trade: "Facility" },
+    { en: "See the nurse if you are sick.", es: "Vea a la enfermera si está enfermo.", region: "", trade: "Facility" },
+    { en: "You will receive your medication on schedule.", es: "Recibirá su medicamento según lo programado.", region: "", trade: "Facility" },
+    { en: "Do not take medication from others.", es: "No tome medicamento de otros.", region: "", trade: "Facility" },
+    { en: "Count time is now.", es: "Es hora del conteo.", region: "", trade: "Facility" },
+    { en: "Everyone must be in their cells.", es: "Todos deben estar en sus celdas.", region: "", trade: "Facility" },
+    { en: "Stay in your cell during count.", es: "Quédese en su celda durante el conteo.", region: "", trade: "Facility" },
+    { en: "Lights out at 9 p.m.", es: "Las luces se apagan a las 9 de la noche.", region: "", trade: "Facility" },
+    { en: "Lights on at 6 a.m.", es: "Las luces se encienden a las 6 de la mañana.", region: "", trade: "Facility" },
+    { en: "Visitation is on Saturdays and Sundays.", es: "Las visitas son los sábados y domingos.", region: "", trade: "Facility" },
+    { en: "You can make phone calls.", es: "Puede hacer llamadas telefónicas.", region: "", trade: "Facility" },
+    { en: "Phone calls are monitored.", es: "Las llamadas telefónicas se monitorean.", region: "", trade: "Facility" },
+    { en: "You can have mail.", es: "Puede recibir correo.", region: "", trade: "Facility" },
+    { en: "Mail is screened.", es: "El correo se revisa.", region: "", trade: "Facility" },
+    { en: "No contraband allowed.", es: "No se permiten artículos prohibidos.", region: "", trade: "Facility" },
+    { en: "Yard time is one hour.", es: "El tiempo de patio es una hora.", region: "", trade: "Facility" },
+    { en: "You can exercise in the yard.", es: "Puede hacer ejercicio en el patio.", region: "", trade: "Facility" },
+    { en: "Keep the yard clean.", es: "Mantenga el patio limpio.", region: "", trade: "Facility" },
+    { en: "You will be transported.", es: "Será trasladado.", region: "", trade: "Facility" },
+    { en: "Put on your transport papers.", es: "Póngase los papeles de transporte.", region: "", trade: "Facility" },
+    { en: "Chain up for transport.", es: "Encadenarse para el transporte.", region: "", trade: "Facility" },
+
+    // DE-ESCALATION
+    { en: "I want to help you.", es: "Quiero ayudarle.", region: "", trade: "De-escalation" },
+    { en: "Stay calm.", es: "Manténgase tranquilo.", region: "", trade: "De-escalation" },
+    { en: "Everything will be okay.", es: "Todo estará bien.", region: "", trade: "De-escalation" },
+    { en: "I understand your concern.", es: "Entiendo su preocupación.", region: "", trade: "De-escalation" },
+    { en: "Nobody wants to get hurt.", es: "Nadie quiere lastimarse.", region: "", trade: "De-escalation" },
+    { en: "Let's talk about this.", es: "Hablemos de esto.", region: "", trade: "De-escalation" },
+    { en: "I am listening.", es: "Estoy escuchando.", region: "", trade: "De-escalation" },
+    { en: "Take a deep breath.", es: "Respire profundamente.", region: "", trade: "De-escalation" },
+    { en: "Do not make any sudden movements.", es: "No haga movimientos repentinos.", region: "", trade: "De-escalation" },
+    { en: "Keep your hands visible.", es: "Mantenga las manos visibles.", region: "", trade: "De-escalation" },
+    { en: "Do not reach into your pockets.", es: "No meta la mano en sus bolsillos.", region: "", trade: "De-escalation" },
+    { en: "Do not run.", es: "No corra.", region: "", trade: "De-escalation" },
+    { en: "If you run, I will use force.", es: "Si corre, usaré la fuerza.", region: "", trade: "De-escalation" },
+    { en: "Back away slowly.", es: "Retroceda lentamente.", region: "", trade: "De-escalation" },
+    { en: "Get down on the ground.", es: "Acuéstese en el suelo.", region: "", trade: "De-escalation" },
+    { en: "Do not touch that.", es: "No toque eso.", region: "", trade: "De-escalation" },
+    { en: "Are you having thoughts of harming yourself?", es: "¿Está teniendo pensamientos de hacerse daño?", region: "", trade: "De-escalation" },
+    { en: "You are safe here.", es: "Está seguro aquí.", region: "", trade: "De-escalation" },
+    { en: "Medical staff is available.", es: "El personal médico está disponible.", region: "", trade: "De-escalation" },
+    { en: "We will get you help.", es: "Le ayudaremos.", region: "", trade: "De-escalation" },
+    { en: "Put down the weapon.", es: "Suelte el arma.", region: "", trade: "De-escalation" },
+    { en: "Step away from the edge.", es: "Aléjese del borde.", region: "", trade: "De-escalation" },
+    { en: "I respect you.", es: "Lo respeto.", region: "", trade: "De-escalation" },
+    { en: "You will be treated fairly.", es: "Será tratado justamente.", region: "", trade: "De-escalation" },
+    { en: "Your concerns will be heard.", es: "Sus preocupaciones serán escuchadas.", region: "", trade: "De-escalation" },
+
+    // QUESTIONS
+    { en: "Where are you from?", es: "¿De dónde es?", region: "", trade: "Questions" },
+    { en: "How long have you lived here?", es: "¿Cuánto tiempo ha vivido aquí?", region: "", trade: "Questions" },
+    { en: "Do you have family in the area?", es: "¿Tiene familia en el área?", region: "", trade: "Questions" },
+    { en: "What is your employment?", es: "¿Cuál es su empleo?", region: "", trade: "Questions" },
+    { en: "Where do you work?", es: "¿Dónde trabaja?", region: "", trade: "Questions" },
+    { en: "How long have you worked there?", es: "¿Cuánto tiempo ha trabajado allí?", region: "", trade: "Questions" },
+    { en: "Who is your employer?", es: "¿Quién es su empleador?", region: "", trade: "Questions" },
+    { en: "Do you drink alcohol?", es: "¿Bebe alcohol?", region: "", trade: "Questions" },
+    { en: "How often do you drink?", es: "¿Con qué frecuencia bebe?", region: "", trade: "Questions" },
+    { en: "How much do you drink?", es: "¿Cuánto bebe?", region: "", trade: "Questions" },
+    { en: "When was your last drink?", es: "¿Cuándo fue su última bebida?", region: "", trade: "Questions" },
+    { en: "Have you ever used drugs?", es: "¿Alguna vez ha usado drogas?", region: "", trade: "Questions" },
+    { en: "What drugs have you used?", es: "¿Qué drogas ha usado?", region: "", trade: "Questions" },
+    { en: "How often do you use drugs?", es: "¿Con qué frecuencia usa drogas?", region: "", trade: "Questions" },
+    { en: "When did you last use drugs?", es: "¿Cuándo fue la última vez que usó drogas?", region: "", trade: "Questions" },
+    { en: "Are you addicted?", es: "¿Está adicto?", region: "", trade: "Questions" },
+    { en: "Do you need treatment?", es: "¿Necesita tratamiento?", region: "", trade: "Questions" },
+    { en: "Have you been arrested before?", es: "¿Ha sido arrestado antes?", region: "", trade: "Questions" },
+    { en: "How many times?", es: "¿Cuántas veces?", region: "", trade: "Questions" },
+    { en: "What were the charges?", es: "¿Cuáles fueron los cargos?", region: "", trade: "Questions" },
+    { en: "Have you been convicted?", es: "¿Ha sido condenado?", region: "", trade: "Questions" },
+    { en: "Are you on probation?", es: "¿Está en libertad supervisada?", region: "Mexico: ¿Está en libertad condicional?", trade: "Questions" },
+    { en: "Are you on parole?", es: "¿Está en libertad condicional?", region: "", trade: "Questions" },
+    { en: "When does your probation end?", es: "¿Cuándo termina su libertad supervisada?", region: "", trade: "Questions" },
+    { en: "Where were you last night?", es: "¿Dónde estuvo anoche?", region: "", trade: "Questions" },
+    { en: "What were you doing?", es: "¿Qué estaba haciendo?", region: "", trade: "Questions" },
+    { en: "Who were you with?", es: "¿Con quién estaba?", region: "", trade: "Questions" },
+    { en: "Do you know the victim?", es: "¿Conoce a la víctima?", region: "", trade: "Questions" },
+    { en: "Have you been to this location before?", es: "¿Ha estado en este lugar antes?", region: "", trade: "Questions" },
+    { en: "What time did you arrive?", es: "¿A qué hora llegó?", region: "", trade: "Questions" },
+    { en: "What time did you leave?", es: "¿A qué hora se fue?", region: "", trade: "Questions" },
+    { en: "Did you see anything unusual?", es: "¿Vio algo inusual?", region: "", trade: "Questions" },
+    { en: "Did you hear anything?", es: "¿Escuchó algo?", region: "", trade: "Questions" },
+    { en: "Can you describe what happened?", es: "¿Puede describir lo que sucedió?", region: "", trade: "Questions" },
+    { en: "Do you understand the question?", es: "¿Entiende la pregunta?", region: "", trade: "Questions" },
+    { en: "Are you sure?", es: "¿Está seguro?", region: "", trade: "Questions" },
+    { en: "Tell me more.", es: "Cuénteme más.", region: "", trade: "Questions" },
+    { en: "Is that correct?", es: "¿Eso es correcto?", region: "", trade: "Questions" },
+    { en: "Have you ever had thoughts of hurting others?", es: "¿Alguna vez ha tenido pensamientos de lastimar a otros?", region: "", trade: "Questions" },
+    { en: "Have you ever threatened anyone?", es: "¿Alguna vez ha amenazado a alguien?", region: "", trade: "Questions" },
+    { en: "Have you ever hit someone?", es: "¿Alguna vez ha golpeado a alguien?", region: "", trade: "Questions" },
+
+    // PAPERWORK
+    { en: "Detainee", es: "el detenido / la detenida", region: "", trade: "Paperwork" },
+    { en: "Date of booking", es: "fecha de ingreso", region: "", trade: "Paperwork" },
+    { en: "Booking number", es: "número de ingreso", region: "", trade: "Paperwork" },
+    { en: "Charges", es: "los cargos", region: "", trade: "Paperwork" },
+    { en: "Property", es: "la propiedad", region: "", trade: "Paperwork" },
+    { en: "Signature", es: "la firma", region: "", trade: "Paperwork" },
+    { en: "Thumbprint", es: "la huella dactilar", region: "", trade: "Paperwork" },
+    { en: "Identification", es: "la identificación", region: "", trade: "Paperwork" },
+    { en: "Driver's license number", es: "número de licencia de conducir", region: "", trade: "Paperwork" },
+    { en: "Physical description", es: "la descripción física", region: "", trade: "Paperwork" },
+    { en: "Height", es: "la altura", region: "", trade: "Paperwork" },
+    { en: "Weight", es: "el peso", region: "", trade: "Paperwork" },
+    { en: "Tattoos", es: "los tatuajes", region: "", trade: "Paperwork" },
+    { en: "Scars", es: "las cicatrices", region: "", trade: "Paperwork" },
+    { en: "Birthmarks", es: "los lunares", region: "", trade: "Paperwork" },
+    { en: "Injuries", es: "las lesiones", region: "", trade: "Paperwork" },
+    { en: "Medical alert", es: "alerta médica", region: "", trade: "Paperwork" },
+    { en: "YES or NO", es: "SÍ o NO", region: "", trade: "Paperwork" },
+    { en: "Explain", es: "Explique", region: "", trade: "Paperwork" },
+    { en: "What kind?", es: "¿Qué tipo?", region: "", trade: "Paperwork" },
+    { en: "Money on your person", es: "dinero en su persona", region: "", trade: "Paperwork" },
+    { en: "Total amount", es: "cantidad total", region: "", trade: "Paperwork" },
+    { en: "Sealed with property", es: "sellado con la propiedad", region: "", trade: "Paperwork" },
+    { en: "$1.00", es: "$1.00", region: "", trade: "Paperwork" },
+    { en: "$5.00", es: "$5.00", region: "", trade: "Paperwork" },
+    { en: "$10.00", es: "$10.00", region: "", trade: "Paperwork" },
+    { en: "$20.00", es: "$20.00", region: "", trade: "Paperwork" },
+    { en: "$50.00", es: "$50.00", region: "", trade: "Paperwork" },
+    { en: "$100.00", es: "$100.00", region: "", trade: "Paperwork" },
+    { en: "Wallet", es: "la cartera", region: "", trade: "Paperwork" },
+    { en: "Keys", es: "las llaves", region: "", trade: "Paperwork" },
+    { en: "Watch", es: "el reloj", region: "", trade: "Paperwork" },
+    { en: "Ring", es: "el anillo", region: "", trade: "Paperwork" },
+    { en: "Necklace", es: "el collar", region: "", trade: "Paperwork" },
+    { en: "Bracelet", es: "la pulsera", region: "", trade: "Paperwork" },
+    { en: "Phone", es: "el teléfono", region: "", trade: "Paperwork" },
+    { en: "Sunglasses", es: "las gafas de sol", region: "", trade: "Paperwork" },
+    { en: "Shoes", es: "los zapatos", region: "", trade: "Paperwork" },
+    { en: "Belt", es: "el cinturón", region: "", trade: "Paperwork" },
+    { en: "Jacket", es: "la chaqueta", region: "", trade: "Paperwork" },
+    { en: "Backpack", es: "la mochila", region: "", trade: "Paperwork" },
+    { en: "Other items", es: "otros artículos", region: "", trade: "Paperwork" },
+
+    // PHRASES
+    { en: "My name is Officer...", es: "Mi nombre es el oficial...", region: "", trade: "Phrases" },
+    { en: "I am here to help.", es: "Estoy aquí para ayudar.", region: "", trade: "Phrases" },
+    { en: "Thank you for your cooperation.", es: "Gracias por su cooperación.", region: "", trade: "Phrases" },
+    { en: "Do you speak English?", es: "¿Habla inglés?", region: "", trade: "Phrases" },
+    { en: "I speak a little Spanish.", es: "Hablo un poco de español.", region: "", trade: "Phrases" },
+    { en: "Speak slowly, please.", es: "Hable lentamente, por favor.", region: "", trade: "Phrases" },
+    { en: "I do not understand.", es: "No entiendo.", region: "", trade: "Phrases" },
+    { en: "Can you repeat that?", es: "¿Puede repetir eso?", region: "", trade: "Phrases" },
+    { en: "You are under arrest.", es: "Está bajo arresto.", region: "", trade: "Phrases" },
+    { en: "You are being detained.", es: "Está siendo detenido.", region: "", trade: "Phrases" },
+    { en: "This is for your safety and ours.", es: "Esto es por su seguridad y la nuestra.", region: "", trade: "Phrases" },
+    { en: "You have been charged with...", es: "Ha sido acusado de...", region: "", trade: "Phrases" },
+    { en: "You will appear before a judge.", es: "Comparecerá ante un juez.", region: "", trade: "Phrases" },
+    { en: "You will be booked.", es: "Será registrado.", region: "", trade: "Phrases" },
+    { en: "Your belongings will be inventoried.", es: "Sus pertenencias serán inventariadas.", region: "", trade: "Phrases" },
+    { en: "You will receive a receipt.", es: "Recibirá un recibo.", region: "", trade: "Phrases" },
+    { en: "If you need medical attention, tell an officer.", es: "Si necesita atención médica, dígale a un oficial.", region: "", trade: "Phrases" },
+    { en: "We have medical staff on site.", es: "Tenemos personal médico en el lugar.", region: "", trade: "Phrases" },
+    { en: "Do not delay reporting an illness.", es: "No retrase el informe de una enfermedad.", region: "", trade: "Phrases" },
+    { en: "This is the booking area.", es: "Esta es el área de ingreso.", region: "", trade: "Phrases" },
+    { en: "The cafeteria is down this hall.", es: "La cafetería está por este pasillo.", region: "", trade: "Phrases" },
+    { en: "The medical unit is to the right.", es: "La unidad médica está a la derecha.", region: "", trade: "Phrases" },
+    { en: "The phones are here.", es: "Los teléfonos están aquí.", region: "", trade: "Phrases" },
+    { en: "Respect other inmates.", es: "Respete a otros internos.", region: "", trade: "Phrases" },
+    { en: "Do not start fights.", es: "No inicie peleas.", region: "", trade: "Phrases" },
+    { en: "Violence will not be tolerated.", es: "La violencia no será tolerada.", region: "", trade: "Phrases" },
+    { en: "Obey all staff members.", es: "Obedezca a todos los miembros del personal.", region: "", trade: "Phrases" },
+    { en: "Report problems to staff.", es: "Informe los problemas al personal.", region: "", trade: "Phrases" },
+    { en: "Breaking rules has consequences.", es: "Romper las reglas tiene consecuencias.", region: "", trade: "Phrases" },
+    { en: "You can lose privileges.", es: "Puede perder privilegios.", region: "", trade: "Phrases" },
+    { en: "Serious violations result in disciplinary action.", es: "Las infracciones graves resultan en acciones disciplinarias.", region: "", trade: "Phrases" },
+    { en: "Contraband is prohibited.", es: "Los artículos prohibidos están prohibidos.", region: "", trade: "Phrases" },
+    { en: "Smuggling contraband is a crime.", es: "Contrabandear artículos prohibidos es un crimen.", region: "", trade: "Phrases" },
+    { en: "No weapons are allowed.", es: "No se permiten armas.", region: "", trade: "Phrases" },
+    { en: "No drugs or alcohol.", es: "Sin drogas ni alcohol.", region: "", trade: "Phrases" },
+    { en: "In case of emergency, alert staff immediately.", es: "En caso de emergencia, alerte al personal inmediatamente.", region: "", trade: "Phrases" },
+    { en: "Do not panic.", es: "No entre en pánico.", region: "", trade: "Phrases" },
+    { en: "Follow staff instructions during an emergency.", es: "Siga las instrucciones del personal durante una emergencia.", region: "", trade: "Phrases" },
+    { en: "Fire alarm means evacuate.", es: "La alarma de incendio significa evacuar.", region: "", trade: "Phrases" },
+    { en: "Do you have questions?", es: "¿Tiene preguntas?", region: "", trade: "Phrases" },
+    { en: "Sign here to acknowledge you received these rules.", es: "Firme aquí para reconocer que recibió estas reglas.", region: "", trade: "Phrases" },
+    { en: "Welcome to the facility.", es: "Bienvenido al establecimiento.", region: "", trade: "Phrases" }
+  ];
+
+  // assign stable ids
+  SEED_TERMS.forEach(function (t, i) { t.id = "t" + i; });
+
+  // ---------------------------------------------------------------------
+  // Date helpers — plain YYYY-MM-DD strings, no Date-object comparisons.
+  // ---------------------------------------------------------------------
+  function pad2(n) { return n < 10 ? "0" + n : "" + n; }
+
+  function todayStr() {
+    var d = new Date();
+    return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
+  }
+
+  function addDays(dateStr, n) {
+    var parts = dateStr.split("-");
+    var y = parseInt(parts[0], 10);
+    var m = parseInt(parts[1], 10);
+    var d = parseInt(parts[2], 10);
+    var utcMs = Date.UTC(y, m - 1, d) + n * 86400000;
+    var dt = new Date(utcMs);
+    return dt.getUTCFullYear() + "-" + pad2(dt.getUTCMonth() + 1) + "-" + pad2(dt.getUTCDate());
+  }
+
+  // ---------------------------------------------------------------------
+  // Persistence
+  // ---------------------------------------------------------------------
+  function defaultState() {
+    return {
+      version: 1,
+      progress: {},           // id -> { box: 1-5, due: "YYYY-MM-DD" }
+      newIntroduced: { date: "", ids: [] },
+      stats: { lastStudyDate: "", streak: 0, totalReviews: 0, correct: 0 },
+      selectedTrades: []      // empty = all
+    };
+  }
+
+  var state = loadState();
+
+  function loadState() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return defaultState();
+      var parsed = JSON.parse(raw);
+      var d = defaultState();
+      return Object.assign(d, parsed, {
+        progress: parsed.progress || {},
+        newIntroduced: parsed.newIntroduced || d.newIntroduced,
+        stats: Object.assign(d.stats, parsed.stats || {}),
+        selectedTrades: parsed.selectedTrades || []
+      });
+    } catch (e) {
+      return defaultState();
+    }
+  }
+
+  function saveState() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) { /* storage unavailable — progress just won't persist */ }
+  }
+
+  // ---------------------------------------------------------------------
+  // Leitner helpers
+  // ---------------------------------------------------------------------
+  function newCardsRemainingToday() {
+    var today = todayStr();
+    if (state.newIntroduced.date !== today) return NEW_PER_DAY;
+    return Math.max(0, NEW_PER_DAY - state.newIntroduced.ids.length);
+  }
+
+  function markIntroduced(id) {
+    var today = todayStr();
+    if (state.newIntroduced.date !== today) {
+      state.newIntroduced = { date: today, ids: [] };
+    }
+    if (state.newIntroduced.ids.indexOf(id) === -1) {
+      state.newIntroduced.ids.push(id);
+    }
+  }
+
+  function cardsForTrades(trades) {
+    if (!trades || trades.length === 0) return SEED_TERMS.slice();
+    return SEED_TERMS.filter(function (t) { return trades.indexOf(t.trade) !== -1; });
+  }
+
+  function dueCards(pool) {
+    var today = todayStr();
+    return pool.filter(function (t) {
+      var p = state.progress[t.id];
+      return p && p.due <= today;
+    });
+  }
+
+  function newCards(pool) {
+    return pool.filter(function (t) { return !state.progress[t.id]; });
+  }
+
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  function recordAnswer(cardId, correct) {
+    var today = todayStr();
+    var p = state.progress[cardId];
+    var box = p ? p.box : 0;
+    if (correct) {
+      box = Math.min(5, box + 1);
+    } else {
+      box = 1;
+    }
+    var due = addDays(today, INTERVALS[box - 1]);
+    state.progress[cardId] = { box: box, due: due };
+
+    state.stats.totalReviews++;
+    if (correct) state.stats.correct++;
+
+    if (state.stats.lastStudyDate !== today) {
+      if (state.stats.lastStudyDate === addDays(today, -1)) {
+        state.stats.streak++;
+      } else {
+        state.stats.streak = 1;
+      }
+      state.stats.lastStudyDate = today;
+    }
+    saveState();
+  }
+
+  // ---------------------------------------------------------------------
+  // Text-to-speech
+  // ---------------------------------------------------------------------
+  var VOICE_PRIORITY = ["es-MX", "es-US", "es-419", "es-CO", "es-AR", "es-ES"];
+  var cachedVoices = [];
+
+  function refreshVoices() {
+    if ("speechSynthesis" in window) {
+      cachedVoices = window.speechSynthesis.getVoices() || [];
+    }
+  }
+
+  if ("speechSynthesis" in window) {
+    refreshVoices();
+    window.speechSynthesis.onvoiceschanged = refreshVoices;
+  }
+
+  function pickVoice() {
+    if (!cachedVoices.length) return null;
+    for (var i = 0; i < VOICE_PRIORITY.length; i++) {
+      var want = VOICE_PRIORITY[i].toLowerCase();
+      for (var j = 0; j < cachedVoices.length; j++) {
+        var lang = (cachedVoices[j].lang || "").toLowerCase().replace("_", "-");
+        if (lang === want) return cachedVoices[j];
+      }
+    }
+    for (var k = 0; k < cachedVoices.length; k++) {
+      var l = (cachedVoices[k].lang || "").toLowerCase();
+      if (l.indexOf("es") === 0) return cachedVoices[k];
+    }
+    return null;
+  }
+
+  function speak(text) {
+    if (!("speechSynthesis" in window)) return;
+    window.speechSynthesis.cancel();
+    var utter = new SpeechSynthesisUtterance(text);
+    var v = pickVoice();
+    if (v) utter.voice = v;
+    utter.lang = v ? v.lang : "es-MX";
+    utter.rate = 0.95;
+    window.speechSynthesis.speak(utter);
+  }
+
+  // ---------------------------------------------------------------------
+  // DOM refs
+  // ---------------------------------------------------------------------
+  var $ = function (id) { return document.getElementById(id); };
+
+  var screens = {
+    home: $("screen-home"),
+    study: $("screen-study"),
+    browse: $("screen-browse"),
+    stats: $("screen-stats")
+  };
+  var tabButtons = document.querySelectorAll(".tab-btn");
+
+  function showScreen(name) {
+    Object.keys(screens).forEach(function (k) {
+      screens[k].hidden = (k !== name);
+    });
+    tabButtons.forEach(function (b) {
+      b.classList.toggle("active", b.getAttribute("data-screen") === name);
+    });
+    if (name === "home") renderHome();
+    if (name === "browse") renderBrowse();
+    if (name === "stats") renderStats();
+  }
+
+  tabButtons.forEach(function (b) {
+    b.addEventListener("click", function () { showScreen(b.getAttribute("data-screen")); });
+  });
+
+  // ---------------------------------------------------------------------
+  // HOME
+  // ---------------------------------------------------------------------
+  function renderChips(container, selected, onToggle) {
+    container.innerHTML = "";
+    TRADES.forEach(function (trade) {
+      var chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "chip";
+      chip.textContent = trade;
+      var isOn = selected.indexOf(trade) !== -1;
+      chip.setAttribute("aria-pressed", isOn ? "true" : "false");
+      chip.addEventListener("click", function () {
+        var idx = selected.indexOf(trade);
+        if (idx === -1) selected.push(trade); else selected.splice(idx, 1);
+        onToggle();
+      });
+      container.appendChild(chip);
+    });
+  }
+
+  function renderHome() {
+    renderChips($("home-chips"), state.selectedTrades, function () {
+      saveState();
+      renderHome();
+    });
+    var pool = cardsForTrades(state.selectedTrades);
+    $("home-due").textContent = dueCards(pool).length;
+    $("home-new").textContent = Math.min(newCards(pool).length, newCardsRemainingToday());
+    $("home-total").textContent = pool.length;
+  }
+
+  // ---------------------------------------------------------------------
+  // STUDY SESSION
+  // ---------------------------------------------------------------------
+  var session = null; // { queue: [{card, direction}], index, retried: Set, correctCount }
+
+  function buildSession(ignoreSchedule) {
+    var pool = cardsForTrades(state.selectedTrades);
+    var due = shuffle(dueCards(pool));
+    var remaining = newCardsRemainingToday();
+    var fresh = shuffle(newCards(pool)).slice(0, remaining);
+
+    var queueCards;
+    if (ignoreSchedule) {
+      queueCards = shuffle(pool).slice(0, 30);
+    } else {
+      queueCards = due.concat(fresh);
+      if (queueCards.length === 0) return null;
+    }
+
+    fresh.forEach(function (c) { markIntroduced(c.id); });
+    saveState();
+
+    var items = queueCards.map(function (c) {
+      return { card: c, direction: Math.random() < 0.5 ? "en-es" : "es-en" };
+    });
+
+    return { queue: items, index: 0, retried: {}, correctCount: 0, total: items.length };
+  }
+
+  function startSession(ignoreSchedule) {
+    session = buildSession(ignoreSchedule);
+    showScreen("study");
+    renderStudy();
+  }
+
+  $("btn-start-review").addEventListener("click", function () { startSession(false); });
+  $("btn-practice-all").addEventListener("click", function () { startSession(true); });
+  $("empty-back-home").addEventListener("click", function () { showScreen("home"); });
+  $("complete-back-home").addEventListener("click", function () { showScreen("home"); });
+
+  function currentItem() {
+    if (!session || session.index >= session.queue.length) return null;
+    return session.queue[session.index];
+  }
+
+  function renderGauge(box) {
+    var g = $("study-gauge");
+    g.innerHTML = "";
+    for (var i = 1; i <= 5; i++) {
+      var bar = document.createElement("div");
+      bar.className = "bar" + (i <= box ? " filled" : "");
+      g.appendChild(bar);
+    }
+  }
+
+  function renderStudy() {
+    var item = currentItem();
+
+    $("study-active").hidden = !!(!item);
+    $("study-empty").hidden = !(session === null);
+    $("study-complete").hidden = !(session && item === null && session.queue.length > 0);
+
+    if (session === null) return; // nothing due
+    if (item === null) {
+      var pct = session.total ? Math.round((session.correctCount / session.total) * 100) : 0;
+      $("complete-summary").textContent =
+        "Reviewed " + session.total + " card" + (session.total === 1 ? "" : "s") +
+        " — " + session.correctCount + " correct (" + pct + "%).";
+      return;
+    }
+
+    var card = item.card;
+    var p = state.progress[card.id];
+    var boxBefore = p ? p.box : 0;
+
+    $("study-progress").textContent = "Card " + (session.index + 1) + " of " + session.queue.length;
+    $("study-trade").textContent = card.trade;
+
+    var promptIsEnglish = item.direction === "en-es";
+    $("study-prompt-label").textContent = promptIsEnglish ? "English" : "Español";
+    $("study-prompt-text").textContent = promptIsEnglish ? card.en : card.es;
+
+    $("study-answer-label").textContent = promptIsEnglish ? "Español" : "English";
+    $("study-answer-text").textContent = promptIsEnglish ? card.es : card.en;
+
+    if (card.region) {
+      $("study-region-note").hidden = false;
+      $("study-region-note").textContent = "Regional note: " + card.region;
+    } else {
+      $("study-region-note").hidden = true;
+    }
+
+    $("study-answer-block").hidden = true;
+    $("study-flip-row").hidden = false;
+    $("study-answer-row").hidden = true;
+
+    renderGauge(boxBefore);
+  }
+
+  $("study-flip").addEventListener("click", function () {
+    $("study-answer-block").hidden = false;
+    $("study-flip-row").hidden = true;
+    $("study-answer-row").hidden = false;
+  });
+
+  $("study-speak").addEventListener("click", function () {
+    var item = currentItem();
+    if (!item) return;
+    speak(item.card.es);
+  });
+
+  function answerCard(correct) {
+    var item = currentItem();
+    if (!item) return;
+
+    recordAnswer(item.card.id, correct);
+    if (correct) session.correctCount++;
+
+    if (!correct && !session.retried[item.card.id]) {
+      session.retried[item.card.id] = true;
+      session.queue.push({ card: item.card, direction: Math.random() < 0.5 ? "en-es" : "es-en" });
+    }
+
+    session.index++;
+    renderStudy();
+  }
+
+  $("study-miss").addEventListener("click", function () { answerCard(false); });
+  $("study-got").addEventListener("click", function () { answerCard(true); });
+
+  // ---------------------------------------------------------------------
+  // BROWSE
+  // ---------------------------------------------------------------------
+  var browseSelected = [];
+
+  function renderBrowse() {
+    renderChips($("browse-chips"), browseSelected, renderBrowse);
+
+    var query = $("browse-search").value.trim().toLowerCase();
+    var pool = cardsForTrades(browseSelected);
+    if (query) {
+      pool = pool.filter(function (c) {
+        return c.en.toLowerCase().indexOf(query) !== -1 || c.es.toLowerCase().indexOf(query) !== -1;
+      });
+    }
+
+    var list = $("browse-list");
+    list.innerHTML = "";
+    if (pool.length === 0) {
+      var empty = document.createElement("div");
+      empty.className = "no-results";
+      empty.textContent = "No matching phrases.";
+      list.appendChild(empty);
+      return;
+    }
+
+    pool.forEach(function (c) {
+      var p = state.progress[c.id];
+      var item = document.createElement("div");
+      item.className = "browse-item";
+      var boxLabel = p ? ("Box " + p.box) : "New";
+      item.innerHTML =
+        '<div class="row1">' +
+          '<div><div class="en"></div><div class="es"></div></div>' +
+          '<div class="box-pill"></div>' +
+        '</div>' +
+        (c.region ? '<div class="region"></div>' : "");
+      item.querySelector(".en").textContent = c.en;
+      item.querySelector(".es").textContent = c.es;
+      item.querySelector(".box-pill").textContent = boxLabel;
+      if (c.region) item.querySelector(".region").textContent = "Regional note: " + c.region;
+      list.appendChild(item);
+    });
+  }
+
+  $("browse-search").addEventListener("input", renderBrowse);
+
+  // ---------------------------------------------------------------------
+  // STATS
+  // ---------------------------------------------------------------------
+  function renderStats() {
+    $("stat-streak").textContent = state.stats.streak;
+    $("stat-reviews").textContent = state.stats.totalReviews;
+    var acc = state.stats.totalReviews ? Math.round((state.stats.correct / state.stats.totalReviews) * 100) : 0;
+    $("stat-accuracy").textContent = acc + "%";
+
+    var counts = [0, 0, 0, 0, 0]; // box 1..5
+    var newCount = 0;
+    SEED_TERMS.forEach(function (t) {
+      var p = state.progress[t.id];
+      if (!p) { newCount++; return; }
+      counts[p.box - 1]++;
+    });
+    $("stat-mastered").textContent = counts[4];
+
+    var rows = $("box-dist-rows");
+    rows.innerHTML = "";
+    var total = SEED_TERMS.length;
+    var defs = [
+      ["New", newCount],
+      ["Box 1", counts[0]],
+      ["Box 2", counts[1]],
+      ["Box 3", counts[2]],
+      ["Box 4", counts[3]],
+      ["Box 5", counts[4]]
+    ];
+    defs.forEach(function (d) {
+      var row = document.createElement("div");
+      row.className = "box-dist-row";
+      var pct = total ? Math.round((d[1] / total) * 100) : 0;
+      row.innerHTML =
+        '<div class="label"></div><div class="track"><div class="fill" style="width:' + pct + '%"></div></div><div class="count"></div>';
+      row.querySelector(".label").textContent = d[0];
+      row.querySelector(".count").textContent = d[1];
+      rows.appendChild(row);
+    });
+  }
+
+  $("btn-reset-progress").addEventListener("click", function () {
+    if (!confirm("Reset all progress? This cannot be undone.")) return;
+    state = defaultState();
+    saveState();
+    renderStats();
+    renderHome();
+  });
+
+  // ---------------------------------------------------------------------
+  // Init
+  // ---------------------------------------------------------------------
+  renderHome();
+})();
+</script>
+</body>
+</html>
