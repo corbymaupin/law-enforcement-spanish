@@ -313,6 +313,64 @@
   }
   .no-results { text-align: center; color: var(--text-dim); padding: 30px 0; }
 
+  /* ---- miranda button + modal ---- */
+  .btn-miranda {
+    width: 100%;
+    margin-top: 10px;
+    background: var(--card);
+    border: 1px solid var(--blue-lit);
+    color: var(--blue-accent);
+  }
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 50;
+  }
+  .modal-overlay[hidden] { display: none; }
+  .modal-card {
+    width: 100%;
+    max-width: 560px;
+    max-height: 88vh;
+    overflow-y: auto;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  .modal-header h2 { margin: 0; font-size: 18px; }
+  .modal-close {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  .modal-subtitle { color: var(--text-dim); font-size: 13px; margin: 0 0 16px; }
+  .miranda-line {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 13px 15px;
+    margin-bottom: 10px;
+  }
+  .miranda-line .en { font-size: 13px; color: var(--text-dim); }
+  .miranda-line .es { font-size: 17px; font-weight: 700; color: var(--blue-accent); margin-top: 4px; line-height: 1.35; }
+  .modal-actions { display: flex; gap: 10px; margin-top: 6px; }
+  .modal-actions .btn { flex: 1; }
+
   /* ---- stats ---- */
   .stats-grid {
     display: grid;
@@ -389,6 +447,7 @@
 
       <button class="btn btn-primary" id="btn-start-review">Start Reviewing</button>
       <button class="btn btn-secondary" id="btn-practice-all">Practice Ahead (ignore schedule)</button>
+      <button class="btn btn-miranda" id="btn-miranda">📋 Miranda Rights (Español)</button>
     </section>
 
     <!-- STUDY -->
@@ -461,6 +520,21 @@
     <button class="tab-btn" data-screen="browse"><span class="icon">🔎</span>Browse</button>
     <button class="tab-btn" data-screen="stats"><span class="icon">📊</span>Stats</button>
   </nav>
+
+  <div class="modal-overlay" id="miranda-modal" hidden>
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>Miranda Warning</h2>
+        <button class="modal-close" id="miranda-close" aria-label="Close">&times;</button>
+      </div>
+      <p class="modal-subtitle">Read verbatim, line by line. The detainee should acknowledge understanding before questioning begins.</p>
+      <div id="miranda-lines"></div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="miranda-stop">⏹ Stop</button>
+        <button class="btn btn-primary" id="miranda-speak">🔊 Read Aloud</button>
+      </div>
+    </div>
+  </div>
 
 </div>
 
@@ -791,6 +865,16 @@
 
   // assign stable ids
   SEED_TERMS.forEach(function (t, i) { t.id = "t" + i; });
+
+  // Full Miranda warning, line by line — wording matches the vetted
+  // Rights-category cards above so the deck and this reference agree.
+  var MIRANDA_LINES = [
+    { en: "You have the right to remain silent.", es: "Tiene derecho a permanecer en silencio." },
+    { en: "Anything you say can be used against you in a court of law.", es: "Todo lo que diga puede ser usado en su contra en un tribunal de justicia." },
+    { en: "You have the right to speak with an attorney and to have an attorney present during questioning.", es: "Tiene derecho a hablar con un abogado y a tener un abogado presente durante el interrogatorio." },
+    { en: "If you cannot afford an attorney, one will be provided for you at no cost.", es: "Si no puede pagar un abogado, se le designará uno sin costo." },
+    { en: "Do you understand these rights as I have explained them to you?", es: "¿Entiende estos derechos que le he explicado?" }
+  ];
 
   // ---------------------------------------------------------------------
   // Date helpers — plain YYYY-MM-DD strings, no Date-object comparisons.
@@ -1251,6 +1335,82 @@
     renderStats();
     renderHome();
   });
+
+  // ---------------------------------------------------------------------
+  // MIRANDA MODAL
+  // ---------------------------------------------------------------------
+  var mirandaSpeaking = false;
+
+  function renderMirandaLines() {
+    var container = $("miranda-lines");
+    container.innerHTML = "";
+    MIRANDA_LINES.forEach(function (line, i) {
+      var div = document.createElement("div");
+      div.className = "miranda-line";
+      div.id = "miranda-line-" + i;
+      div.innerHTML = '<div class="en"></div><div class="es"></div>';
+      div.querySelector(".en").textContent = line.en;
+      div.querySelector(".es").textContent = line.es;
+      container.appendChild(div);
+    });
+  }
+
+  function openMirandaModal() {
+    renderMirandaLines();
+    $("miranda-modal").hidden = false;
+  }
+
+  function closeMirandaModal() {
+    stopMiranda();
+    $("miranda-modal").hidden = true;
+  }
+
+  function highlightMirandaLine(i) {
+    MIRANDA_LINES.forEach(function (_, idx) {
+      $("miranda-line-" + idx).style.borderColor = (idx === i) ? "var(--blue-lit)" : "var(--border)";
+    });
+  }
+
+  function speakMirandaFrom(i) {
+    if (!("speechSynthesis" in window) || i >= MIRANDA_LINES.length) {
+      mirandaSpeaking = false;
+      return;
+    }
+    highlightMirandaLine(i);
+    var utter = new SpeechSynthesisUtterance(MIRANDA_LINES[i].es);
+    var v = pickVoice();
+    if (v) utter.voice = v;
+    utter.lang = v ? v.lang : "es-MX";
+    utter.rate = 0.9;
+    utter.onend = function () {
+      if (mirandaSpeaking) speakMirandaFrom(i + 1);
+    };
+    window.speechSynthesis.speak(utter);
+  }
+
+  function speakMiranda() {
+    if (!("speechSynthesis" in window)) return;
+    stopMiranda();
+    mirandaSpeaking = true;
+    speakMirandaFrom(0);
+  }
+
+  function stopMiranda() {
+    mirandaSpeaking = false;
+    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    MIRANDA_LINES.forEach(function (_, idx) {
+      var el = $("miranda-line-" + idx);
+      if (el) el.style.borderColor = "var(--border)";
+    });
+  }
+
+  $("btn-miranda").addEventListener("click", openMirandaModal);
+  $("miranda-close").addEventListener("click", closeMirandaModal);
+  $("miranda-modal").addEventListener("click", function (e) {
+    if (e.target === $("miranda-modal")) closeMirandaModal();
+  });
+  $("miranda-speak").addEventListener("click", speakMiranda);
+  $("miranda-stop").addEventListener("click", stopMiranda);
 
   // ---------------------------------------------------------------------
   // Init
