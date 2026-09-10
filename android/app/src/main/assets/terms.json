@@ -1,0 +1,2067 @@
+[
+  {
+    "en": "What is your full name?",
+    "es": "¿Cuál es su nombre completo?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What is your full name?|¿Cuál es su nombre completo?"
+  },
+  {
+    "en": "What is your date of birth?",
+    "es": "¿Cuál es su fecha de nacimiento?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What is your date of birth?|¿Cuál es su fecha de nacimiento?"
+  },
+  {
+    "en": "Where were you born?",
+    "es": "¿Dónde nació?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Where were you born?|¿Dónde nació?"
+  },
+  {
+    "en": "What is your current address?",
+    "es": "¿Cuál es su dirección actual?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What is your current address?|¿Cuál es su dirección actual?"
+  },
+  {
+    "en": "Do you have a social security number?",
+    "es": "¿Tiene un número de seguro social?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Do you have a social security number?|¿Tiene un número de seguro social?"
+  },
+  {
+    "en": "What is your social security number?",
+    "es": "¿Cuál es su número de seguro social?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What is your social security number?|¿Cuál es su número de seguro social?"
+  },
+  {
+    "en": "Do you have a driver's license?",
+    "es": "¿Tiene una licencia de conducir?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Do you have a driver's license?|¿Tiene una licencia de conducir?"
+  },
+  {
+    "en": "What is your driver's license number?",
+    "es": "¿Cuál es el número de su licencia de conducir?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What is your driver's license number?|¿Cuál es el número de su licencia de conducir?"
+  },
+  {
+    "en": "Do you have any aliases or nicknames?",
+    "es": "¿Tiene algún alias o apodo?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Do you have any aliases or nicknames?|¿Tiene algún alias o apodo?"
+  },
+  {
+    "en": "What phone number can we reach you at?",
+    "es": "¿A qué número de teléfono podemos contactarlo?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What phone number can we reach you at?|¿A qué número de teléfono podemos contactarlo?"
+  },
+  {
+    "en": "Who should we call as an emergency contact?",
+    "es": "¿A quién debemos llamar en caso de emergencia?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Who should we call as an emergency contact?|¿A quién debemos llamar en caso de emergencia?"
+  },
+  {
+    "en": "What is their phone number?",
+    "es": "¿Cuál es su número de teléfono?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What is their phone number?|¿Cuál es su número de teléfono?"
+  },
+  {
+    "en": "Are you gang affiliated?",
+    "es": "¿Tiene afiliación a pandillas?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Are you gang affiliated?|¿Tiene afiliación a pandillas?"
+  },
+  {
+    "en": "Do you have any gang tattoos?",
+    "es": "¿Tiene tatuajes de pandilla?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Do you have any gang tattoos?|¿Tiene tatuajes de pandilla?"
+  },
+  {
+    "en": "What gang are you affiliated with?",
+    "es": "¿Con qué pandilla está afiliado?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What gang are you affiliated with?|¿Con qué pandilla está afiliado?"
+  },
+  {
+    "en": "Do you need an interpreter for court proceedings?",
+    "es": "¿Necesita un intérprete para los procedimientos judiciales?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Do you need an interpreter for court proceedings?|¿Necesita un intérprete para los procedimientos judiciales?"
+  },
+  {
+    "en": "Do you have an attorney?",
+    "es": "¿Tiene un abogado?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Do you have an attorney?|¿Tiene un abogado?"
+  },
+  {
+    "en": "What is your attorney's name and phone number?",
+    "es": "¿Cuál es el nombre y número de teléfono de su abogado?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What is your attorney's name and phone number?|¿Cuál es el nombre y número de teléfono de su abogado?"
+  },
+  {
+    "en": "Are you intoxicated on alcohol?",
+    "es": "¿Está intoxicado por alcohol?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Are you intoxicated on alcohol?|¿Está intoxicado por alcohol?"
+  },
+  {
+    "en": "Have you used drugs?",
+    "es": "¿Ha usado drogas?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Have you used drugs?|¿Ha usado drogas?"
+  },
+  {
+    "en": "What type of drugs?",
+    "es": "¿Qué tipo de drogas?",
+    "region": "",
+    "trade": "Intake",
+    "id": "What type of drugs?|¿Qué tipo de drogas?"
+  },
+  {
+    "en": "When did you last use?",
+    "es": "¿Cuándo fue la última vez que usó?",
+    "region": "",
+    "trade": "Intake",
+    "id": "When did you last use?|¿Cuándo fue la última vez que usó?"
+  },
+  {
+    "en": "We will inventory your property.",
+    "es": "Inventaremos sus pertenencias.",
+    "region": "",
+    "trade": "Intake",
+    "id": "We will inventory your property.|Inventaremos sus pertenencias."
+  },
+  {
+    "en": "Do you understand?",
+    "es": "¿Entiende?",
+    "region": "",
+    "trade": "Intake",
+    "id": "Do you understand?|¿Entiende?"
+  },
+  {
+    "en": "Sign here.",
+    "es": "Firme aquí.",
+    "region": "",
+    "trade": "Intake",
+    "id": "Sign here.|Firme aquí."
+  },
+  {
+    "en": "Print your name.",
+    "es": "Escriba su nombre en letra de molde.",
+    "region": "",
+    "trade": "Intake",
+    "id": "Print your name.|Escriba su nombre en letra de molde."
+  },
+  {
+    "en": "Date.",
+    "es": "Fecha.",
+    "region": "",
+    "trade": "Intake",
+    "id": "Date.|Fecha."
+  },
+  {
+    "en": "Are you sick or injured?",
+    "es": "¿Está enfermo o lesionado?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Are you sick or injured?|¿Está enfermo o lesionado?"
+  },
+  {
+    "en": "Are you aware of any serious medical or mental health issues?",
+    "es": "¿Está consciente de algún problema médico o de salud mental grave?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Are you aware of any serious medical or mental health issues?|¿Está consciente de algún problema médico o de salud mental grave?"
+  },
+  {
+    "en": "Explain.",
+    "es": "Explique.",
+    "region": "",
+    "trade": "Medical",
+    "id": "Explain.|Explique."
+  },
+  {
+    "en": "Do you have any medical allergies?",
+    "es": "¿Tiene alguna alergia médica?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have any medical allergies?|¿Tiene alguna alergia médica?"
+  },
+  {
+    "en": "What are you allergic to?",
+    "es": "¿A qué es alérgico?",
+    "region": "",
+    "trade": "Medical",
+    "id": "What are you allergic to?|¿A qué es alérgico?"
+  },
+  {
+    "en": "Do you take prescription medications?",
+    "es": "¿Toma medicamentos recetados?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you take prescription medications?|¿Toma medicamentos recetados?"
+  },
+  {
+    "en": "What medications do you take?",
+    "es": "¿Qué medicamentos toma?",
+    "region": "",
+    "trade": "Medical",
+    "id": "What medications do you take?|¿Qué medicamentos toma?"
+  },
+  {
+    "en": "Do you need your medication?",
+    "es": "¿Necesita su medicamento?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you need your medication?|¿Necesita su medicamento?"
+  },
+  {
+    "en": "Do you have heart disease?",
+    "es": "¿Tiene enfermedad del corazón?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have heart disease?|¿Tiene enfermedad del corazón?"
+  },
+  {
+    "en": "Do you have high blood pressure?",
+    "es": "¿Tiene presión arterial alta?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have high blood pressure?|¿Tiene presión arterial alta?"
+  },
+  {
+    "en": "Do you have asthma?",
+    "es": "¿Tiene asma?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have asthma?|¿Tiene asma?"
+  },
+  {
+    "en": "Do you have diabetes?",
+    "es": "¿Tiene diabetes?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have diabetes?|¿Tiene diabetes?"
+  },
+  {
+    "en": "Do you have epilepsy or seizures?",
+    "es": "¿Tiene epilepsia o convulsiones?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have epilepsy or seizures?|¿Tiene epilepsia o convulsiones?"
+  },
+  {
+    "en": "Do you have hepatitis?",
+    "es": "¿Tiene hepatitis?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have hepatitis?|¿Tiene hepatitis?"
+  },
+  {
+    "en": "Do you have a history of tuberculosis?",
+    "es": "¿Tiene antecedentes de tuberculosis?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have a history of tuberculosis?|¿Tiene antecedentes de tuberculosis?"
+  },
+  {
+    "en": "Do you have a history of venereal disease?",
+    "es": "¿Tiene antecedentes de enfermedades venéreas?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have a history of venereal disease?|¿Tiene antecedentes de enfermedades venéreas?"
+  },
+  {
+    "en": "Do you have HIV or AIDS?",
+    "es": "¿Tiene VIH o SIDA?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have HIV or AIDS?|¿Tiene VIH o SIDA?"
+  },
+  {
+    "en": "Have you been tested for HIV?",
+    "es": "¿Ha sido examinado para VIH?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Have you been tested for HIV?|¿Ha sido examinado para VIH?"
+  },
+  {
+    "en": "Do you have ulcers?",
+    "es": "¿Tiene úlceras?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have ulcers?|¿Tiene úlceras?"
+  },
+  {
+    "en": "Do you have arthritis?",
+    "es": "¿Tiene artritis?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have arthritis?|¿Tiene artritis?"
+  },
+  {
+    "en": "Do you have a painful dental condition?",
+    "es": "¿Tiene una condición dental dolorosa?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have a painful dental condition?|¿Tiene una condición dental dolorosa?"
+  },
+  {
+    "en": "Do you wear glasses or contacts?",
+    "es": "¿Usa gafas o lentes de contacto?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you wear glasses or contacts?|¿Usa gafas o lentes de contacto?"
+  },
+  {
+    "en": "Do you wear glasses?",
+    "es": "¿Usa gafas?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you wear glasses?|¿Usa gafas?"
+  },
+  {
+    "en": "Do you have any physical handicap we should know about?",
+    "es": "¿Tiene alguna discapacidad física que debamos saber?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have any physical handicap we should know about?|¿Tiene alguna discapacidad física que debamos saber?"
+  },
+  {
+    "en": "Have you ever felt constantly on guard?",
+    "es": "¿Alguna vez se ha sentido constantemente en guardia?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Have you ever felt constantly on guard?|¿Alguna vez se ha sentido constantemente en guardia?"
+  },
+  {
+    "en": "Have you felt distanced from others?",
+    "es": "¿Se ha sentido distante de otros?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Have you felt distanced from others?|¿Se ha sentido distante de otros?"
+  },
+  {
+    "en": "Do you have frequent worries you can't get rid of?",
+    "es": "¿Tiene preocupaciones frecuentes que no puede dejar ir?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have frequent worries you can't get rid of?|¿Tiene preocupaciones frecuentes que no puede dejar ir?"
+  },
+  {
+    "en": "Do you hold grudges?",
+    "es": "¿Guarda rencores?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you hold grudges?|¿Guarda rencores?"
+  },
+  {
+    "en": "Do you get irritable easily?",
+    "es": "¿Se irrita fácilmente?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you get irritable easily?|¿Se irrita fácilmente?"
+  },
+  {
+    "en": "Have you been in a hospital for psychiatric reasons?",
+    "es": "¿Ha estado en un hospital por razones psiquiátricas?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Have you been in a hospital for psychiatric reasons?|¿Ha estado en un hospital por razones psiquiátricas?"
+  },
+  {
+    "en": "Are you pregnant?",
+    "es": "¿Está embarazada?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Are you pregnant?|¿Está embarazada?"
+  },
+  {
+    "en": "Are you on birth control?",
+    "es": "¿Usa anticonceptivos?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Are you on birth control?|¿Usa anticonceptivos?"
+  },
+  {
+    "en": "Do you have a special diet prescribed by a physician?",
+    "es": "¿Tiene una dieta especial prescrita por un médico?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you have a special diet prescribed by a physician?|¿Tiene una dieta especial prescrita por un médico?"
+  },
+  {
+    "en": "Do you see a physician?",
+    "es": "¿Ve a un médico?",
+    "region": "",
+    "trade": "Medical",
+    "id": "Do you see a physician?|¿Ve a un médico?"
+  },
+  {
+    "en": "When did you last see a physician?",
+    "es": "¿Cuándo fue la última vez que vio a un médico?",
+    "region": "",
+    "trade": "Medical",
+    "id": "When did you last see a physician?|¿Cuándo fue la última vez que vio a un médico?"
+  },
+  {
+    "en": "You have the right to remain silent.",
+    "es": "Tiene derecho a permanecer en silencio.",
+    "region": "",
+    "trade": "Rights",
+    "id": "You have the right to remain silent.|Tiene derecho a permanecer en silencio."
+  },
+  {
+    "en": "Anything you say can be used against you in a court of law.",
+    "es": "Todo lo que diga puede ser usado en su contra en un tribunal de justicia.",
+    "region": "",
+    "trade": "Rights",
+    "id": "Anything you say can be used against you in a court of law.|Todo lo que diga puede ser usado en su contra en un tribunal de justicia."
+  },
+  {
+    "en": "You have the right to speak with an attorney.",
+    "es": "Tiene derecho a hablar con un abogado.",
+    "region": "",
+    "trade": "Rights",
+    "id": "You have the right to speak with an attorney.|Tiene derecho a hablar con un abogado."
+  },
+  {
+    "en": "You have the right to have an attorney present.",
+    "es": "Tiene derecho a tener un abogado presente.",
+    "region": "",
+    "trade": "Rights",
+    "id": "You have the right to have an attorney present.|Tiene derecho a tener un abogado presente."
+  },
+  {
+    "en": "If you cannot afford an attorney, one will be provided for you.",
+    "es": "Si no puede pagar un abogado, se le designará uno a expensas públicas.",
+    "region": "",
+    "trade": "Rights",
+    "id": "If you cannot afford an attorney, one will be provided for you.|Si no puede pagar un abogado, se le designará uno a expensas públicas."
+  },
+  {
+    "en": "Do you understand these rights?",
+    "es": "¿Entiende estos derechos?",
+    "region": "",
+    "trade": "Rights",
+    "id": "Do you understand these rights?|¿Entiende estos derechos?"
+  },
+  {
+    "en": "Do you wish to speak with an attorney?",
+    "es": "¿Desea hablar con un abogado?",
+    "region": "",
+    "trade": "Rights",
+    "id": "Do you wish to speak with an attorney?|¿Desea hablar con un abogado?"
+  },
+  {
+    "en": "Are you willing to talk to us without an attorney?",
+    "es": "¿Está dispuesto a hablar con nosotros sin un abogado?",
+    "region": "",
+    "trade": "Rights",
+    "id": "Are you willing to talk to us without an attorney?|¿Está dispuesto a hablar con nosotros sin un abogado?"
+  },
+  {
+    "en": "You can stop answering questions at any time.",
+    "es": "Puede dejar de responder preguntas en cualquier momento.",
+    "region": "",
+    "trade": "Rights",
+    "id": "You can stop answering questions at any time.|Puede dejar de responder preguntas en cualquier momento."
+  },
+  {
+    "en": "Do you want to remain silent?",
+    "es": "¿Quiere permanecer en silencio?",
+    "region": "",
+    "trade": "Rights",
+    "id": "Do you want to remain silent?|¿Quiere permanecer en silencio?"
+  },
+  {
+    "en": "I cannot question you further if you invoke your right to silence.",
+    "es": "No puedo hacerle más preguntas si invoca su derecho al silencio.",
+    "region": "",
+    "trade": "Rights",
+    "id": "I cannot question you further if you invoke your right to silence.|No puedo hacerle más preguntas si invoca su derecho al silencio."
+  },
+  {
+    "en": "Do you want to talk to a lawyer?",
+    "es": "¿Quiere hablar con un abogado?",
+    "region": "",
+    "trade": "Rights",
+    "id": "Do you want to talk to a lawyer?|¿Quiere hablar con un abogado?"
+  },
+  {
+    "en": "We will stop questioning if you ask for a lawyer.",
+    "es": "Dejaremos de hacerle preguntas si pide un abogado.",
+    "region": "",
+    "trade": "Rights",
+    "id": "We will stop questioning if you ask for a lawyer.|Dejaremos de hacerle preguntas si pide un abogado."
+  },
+  {
+    "en": "You have the right to contact your consulate.",
+    "es": "Tiene derecho a contactar a su consulado.",
+    "region": "",
+    "trade": "Rights",
+    "id": "You have the right to contact your consulate.|Tiene derecho a contactar a su consulado."
+  },
+  {
+    "en": "Would you like to contact your consulate?",
+    "es": "¿Desea contactar a su consulado?",
+    "region": "",
+    "trade": "Rights",
+    "id": "Would you like to contact your consulate?|¿Desea contactar a su consulado?"
+  },
+  {
+    "en": "Are you waiving your rights?",
+    "es": "¿Está renunciando a sus derechos?",
+    "region": "",
+    "trade": "Rights",
+    "id": "Are you waiving your rights?|¿Está renunciando a sus derechos?"
+  },
+  {
+    "en": "Do you consent to a search?",
+    "es": "¿Consiente en una búsqueda?",
+    "region": "",
+    "trade": "Rights",
+    "id": "Do you consent to a search?|¿Consiente en una búsqueda?"
+  },
+  {
+    "en": "We need your permission to search your property.",
+    "es": "Necesitamos su permiso para buscar su propiedad.",
+    "region": "",
+    "trade": "Rights",
+    "id": "We need your permission to search your property.|Necesitamos su permiso para buscar su propiedad."
+  },
+  {
+    "en": "Listen to me.",
+    "es": "Escúcheme.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Listen to me.|Escúcheme."
+  },
+  {
+    "en": "Do you understand?",
+    "es": "¿Entiende?",
+    "region": "",
+    "trade": "Commands",
+    "id": "Do you understand?|¿Entiende?"
+  },
+  {
+    "en": "Follow me.",
+    "es": "Sígame.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Follow me.|Sígame."
+  },
+  {
+    "en": "Follow the rules.",
+    "es": "Siga las reglas.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Follow the rules.|Siga las reglas."
+  },
+  {
+    "en": "Do not move.",
+    "es": "No se mueva.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Do not move.|No se mueva."
+  },
+  {
+    "en": "Stay here.",
+    "es": "Quédese aquí.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Stay here.|Quédese aquí."
+  },
+  {
+    "en": "Sit down.",
+    "es": "Siéntese.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Sit down.|Siéntese."
+  },
+  {
+    "en": "Stand up.",
+    "es": "Levántese.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Stand up.|Levántese."
+  },
+  {
+    "en": "Put your hands up.",
+    "es": "Levante las manos.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Put your hands up.|Levante las manos."
+  },
+  {
+    "en": "Put your hands down.",
+    "es": "Baje las manos.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Put your hands down.|Baje las manos."
+  },
+  {
+    "en": "Keep your hands where I can see them.",
+    "es": "Mantenga las manos donde pueda verlas.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Keep your hands where I can see them.|Mantenga las manos donde pueda verlas."
+  },
+  {
+    "en": "Turn around.",
+    "es": "Gírese.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Turn around.|Gírese."
+  },
+  {
+    "en": "Face the wall.",
+    "es": "Mire hacia la pared.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Face the wall.|Mire hacia la pared."
+  },
+  {
+    "en": "Comply with my orders.",
+    "es": "Cumpla con mis órdenes.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Comply with my orders.|Cumpla con mis órdenes."
+  },
+  {
+    "en": "I will use force if necessary.",
+    "es": "Usaré la fuerza si es necesario.",
+    "region": "",
+    "trade": "Commands",
+    "id": "I will use force if necessary.|Usaré la fuerza si es necesario."
+  },
+  {
+    "en": "Do not resist.",
+    "es": "No resista.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Do not resist.|No resista."
+  },
+  {
+    "en": "Stop resisting.",
+    "es": "Deje de resistir.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Stop resisting.|Deje de resistir."
+  },
+  {
+    "en": "Relax.",
+    "es": "Relájese.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Relax.|Relájese."
+  },
+  {
+    "en": "Calm down.",
+    "es": "Cálmese.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Calm down.|Cálmese."
+  },
+  {
+    "en": "I am going to handcuff you.",
+    "es": "Lo voy a esposar.",
+    "region": "Mexico: Lo voy a poner las esposas",
+    "trade": "Commands",
+    "id": "I am going to handcuff you.|Lo voy a esposar."
+  },
+  {
+    "en": "Put your hands behind your back.",
+    "es": "Ponga las manos detrás de la espalda.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Put your hands behind your back.|Ponga las manos detrás de la espalda."
+  },
+  {
+    "en": "Do not try to escape.",
+    "es": "No intente escapar.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Do not try to escape.|No intente escapar."
+  },
+  {
+    "en": "I am going to search you.",
+    "es": "Voy a registrarlo.",
+    "region": "",
+    "trade": "Commands",
+    "id": "I am going to search you.|Voy a registrarlo."
+  },
+  {
+    "en": "Do you have any weapons?",
+    "es": "¿Tiene armas?",
+    "region": "",
+    "trade": "Commands",
+    "id": "Do you have any weapons?|¿Tiene armas?"
+  },
+  {
+    "en": "Do you have any sharp objects?",
+    "es": "¿Tiene objetos afilados?",
+    "region": "",
+    "trade": "Commands",
+    "id": "Do you have any sharp objects?|¿Tiene objetos afilados?"
+  },
+  {
+    "en": "Empty your pockets.",
+    "es": "Vacíe sus bolsillos.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Empty your pockets.|Vacíe sus bolsillos."
+  },
+  {
+    "en": "Remove your shoes.",
+    "es": "Quítese los zapatos.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Remove your shoes.|Quítese los zapatos."
+  },
+  {
+    "en": "Remove your belt.",
+    "es": "Quítese el cinturón.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Remove your belt.|Quítese el cinturón."
+  },
+  {
+    "en": "No talking.",
+    "es": "No hable.",
+    "region": "",
+    "trade": "Commands",
+    "id": "No talking.|No hable."
+  },
+  {
+    "en": "Be quiet.",
+    "es": "Calle.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Be quiet.|Calle."
+  },
+  {
+    "en": "Go to your cell.",
+    "es": "Vaya a su celda.",
+    "region": "",
+    "trade": "Commands",
+    "id": "Go to your cell.|Vaya a su celda."
+  },
+  {
+    "en": "You are in protective custody.",
+    "es": "Está en custodia protectora.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You are in protective custody.|Está en custodia protectora."
+  },
+  {
+    "en": "This is your cell.",
+    "es": "Esta es su celda.",
+    "region": "",
+    "trade": "Facility",
+    "id": "This is your cell.|Esta es su celda."
+  },
+  {
+    "en": "You will be housed here.",
+    "es": "Será alojado aquí.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You will be housed here.|Será alojado aquí."
+  },
+  {
+    "en": "Do you need anything?",
+    "es": "¿Necesita algo?",
+    "region": "",
+    "trade": "Facility",
+    "id": "Do you need anything?|¿Necesita algo?"
+  },
+  {
+    "en": "You have a cellmate.",
+    "es": "Tiene un compañero de celda.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You have a cellmate.|Tiene un compañero de celda."
+  },
+  {
+    "en": "Your cellmate is peaceful.",
+    "es": "Su compañero de celda es pacífico.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Your cellmate is peaceful.|Su compañero de celda es pacífico."
+  },
+  {
+    "en": "There are rules to follow in your cell.",
+    "es": "Hay reglas que seguir en su celda.",
+    "region": "",
+    "trade": "Facility",
+    "id": "There are rules to follow in your cell.|Hay reglas que seguir en su celda."
+  },
+  {
+    "en": "Meals are served at specific times.",
+    "es": "Las comidas se sirven a horas específicas.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Meals are served at specific times.|Las comidas se sirven a horas específicas."
+  },
+  {
+    "en": "Breakfast is at 6 a.m.",
+    "es": "El desayuno es a las 6 de la mañana.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Breakfast is at 6 a.m.|El desayuno es a las 6 de la mañana."
+  },
+  {
+    "en": "Lunch is at noon.",
+    "es": "El almuerzo es al mediodía.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Lunch is at noon.|El almuerzo es al mediodía."
+  },
+  {
+    "en": "Dinner is at 5 p.m.",
+    "es": "La cena es a las 5 de la tarde.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Dinner is at 5 p.m.|La cena es a las 5 de la tarde."
+  },
+  {
+    "en": "Do not waste food.",
+    "es": "No malgaste comida.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Do not waste food.|No malgaste comida."
+  },
+  {
+    "en": "You cannot bring outside food.",
+    "es": "No puede traer comida de afuera.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You cannot bring outside food.|No puede traer comida de afuera."
+  },
+  {
+    "en": "Medical care is available.",
+    "es": "La atención médica está disponible.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Medical care is available.|La atención médica está disponible."
+  },
+  {
+    "en": "See the nurse if you are sick.",
+    "es": "Vea a la enfermera si está enfermo.",
+    "region": "",
+    "trade": "Facility",
+    "id": "See the nurse if you are sick.|Vea a la enfermera si está enfermo."
+  },
+  {
+    "en": "You will receive your medication on schedule.",
+    "es": "Recibirá su medicamento según lo programado.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You will receive your medication on schedule.|Recibirá su medicamento según lo programado."
+  },
+  {
+    "en": "Do not take medication from others.",
+    "es": "No tome medicamento de otros.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Do not take medication from others.|No tome medicamento de otros."
+  },
+  {
+    "en": "Count time is now.",
+    "es": "Es hora del conteo.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Count time is now.|Es hora del conteo."
+  },
+  {
+    "en": "Everyone must be in their cells.",
+    "es": "Todos deben estar en sus celdas.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Everyone must be in their cells.|Todos deben estar en sus celdas."
+  },
+  {
+    "en": "Stay in your cell during count.",
+    "es": "Quédese en su celda durante el conteo.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Stay in your cell during count.|Quédese en su celda durante el conteo."
+  },
+  {
+    "en": "Lights out at 9 p.m.",
+    "es": "Las luces se apagan a las 9 de la noche.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Lights out at 9 p.m.|Las luces se apagan a las 9 de la noche."
+  },
+  {
+    "en": "Lights on at 6 a.m.",
+    "es": "Las luces se encienden a las 6 de la mañana.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Lights on at 6 a.m.|Las luces se encienden a las 6 de la mañana."
+  },
+  {
+    "en": "Visitation is on Saturdays and Sundays.",
+    "es": "Las visitas son los sábados y domingos.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Visitation is on Saturdays and Sundays.|Las visitas son los sábados y domingos."
+  },
+  {
+    "en": "You can make phone calls.",
+    "es": "Puede hacer llamadas telefónicas.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You can make phone calls.|Puede hacer llamadas telefónicas."
+  },
+  {
+    "en": "Phone calls are monitored.",
+    "es": "Las llamadas telefónicas se monitorean.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Phone calls are monitored.|Las llamadas telefónicas se monitorean."
+  },
+  {
+    "en": "You can have mail.",
+    "es": "Puede recibir correo.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You can have mail.|Puede recibir correo."
+  },
+  {
+    "en": "Mail is screened.",
+    "es": "El correo se revisa.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Mail is screened.|El correo se revisa."
+  },
+  {
+    "en": "No contraband allowed.",
+    "es": "No se permiten artículos prohibidos.",
+    "region": "",
+    "trade": "Facility",
+    "id": "No contraband allowed.|No se permiten artículos prohibidos."
+  },
+  {
+    "en": "Yard time is one hour.",
+    "es": "El tiempo de patio es una hora.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Yard time is one hour.|El tiempo de patio es una hora."
+  },
+  {
+    "en": "You can exercise in the yard.",
+    "es": "Puede hacer ejercicio en el patio.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You can exercise in the yard.|Puede hacer ejercicio en el patio."
+  },
+  {
+    "en": "Keep the yard clean.",
+    "es": "Mantenga el patio limpio.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Keep the yard clean.|Mantenga el patio limpio."
+  },
+  {
+    "en": "You will be transported.",
+    "es": "Será trasladado.",
+    "region": "",
+    "trade": "Facility",
+    "id": "You will be transported.|Será trasladado."
+  },
+  {
+    "en": "Put on your transport papers.",
+    "es": "Póngase los papeles de transporte.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Put on your transport papers.|Póngase los papeles de transporte."
+  },
+  {
+    "en": "Chain up for transport.",
+    "es": "Encadenarse para el transporte.",
+    "region": "",
+    "trade": "Facility",
+    "id": "Chain up for transport.|Encadenarse para el transporte."
+  },
+  {
+    "en": "I want to help you.",
+    "es": "Quiero ayudarle.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "I want to help you.|Quiero ayudarle."
+  },
+  {
+    "en": "Stay calm.",
+    "es": "Manténgase tranquilo.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Stay calm.|Manténgase tranquilo."
+  },
+  {
+    "en": "Everything will be okay.",
+    "es": "Todo estará bien.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Everything will be okay.|Todo estará bien."
+  },
+  {
+    "en": "I understand your concern.",
+    "es": "Entiendo su preocupación.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "I understand your concern.|Entiendo su preocupación."
+  },
+  {
+    "en": "Nobody wants to get hurt.",
+    "es": "Nadie quiere lastimarse.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Nobody wants to get hurt.|Nadie quiere lastimarse."
+  },
+  {
+    "en": "Let's talk about this.",
+    "es": "Hablemos de esto.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Let's talk about this.|Hablemos de esto."
+  },
+  {
+    "en": "I am listening.",
+    "es": "Estoy escuchando.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "I am listening.|Estoy escuchando."
+  },
+  {
+    "en": "Take a deep breath.",
+    "es": "Respire profundamente.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Take a deep breath.|Respire profundamente."
+  },
+  {
+    "en": "Do not make any sudden movements.",
+    "es": "No haga movimientos repentinos.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Do not make any sudden movements.|No haga movimientos repentinos."
+  },
+  {
+    "en": "Keep your hands visible.",
+    "es": "Mantenga las manos visibles.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Keep your hands visible.|Mantenga las manos visibles."
+  },
+  {
+    "en": "Do not reach into your pockets.",
+    "es": "No meta la mano en sus bolsillos.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Do not reach into your pockets.|No meta la mano en sus bolsillos."
+  },
+  {
+    "en": "Do not run.",
+    "es": "No corra.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Do not run.|No corra."
+  },
+  {
+    "en": "If you run, I will use force.",
+    "es": "Si corre, usaré la fuerza.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "If you run, I will use force.|Si corre, usaré la fuerza."
+  },
+  {
+    "en": "Back away slowly.",
+    "es": "Retroceda lentamente.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Back away slowly.|Retroceda lentamente."
+  },
+  {
+    "en": "Get down on the ground.",
+    "es": "Acuéstese en el suelo.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Get down on the ground.|Acuéstese en el suelo."
+  },
+  {
+    "en": "Do not touch that.",
+    "es": "No toque eso.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Do not touch that.|No toque eso."
+  },
+  {
+    "en": "Are you having thoughts of harming yourself?",
+    "es": "¿Está teniendo pensamientos de hacerse daño?",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Are you having thoughts of harming yourself?|¿Está teniendo pensamientos de hacerse daño?"
+  },
+  {
+    "en": "You are safe here.",
+    "es": "Está seguro aquí.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "You are safe here.|Está seguro aquí."
+  },
+  {
+    "en": "Medical staff is available.",
+    "es": "El personal médico está disponible.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Medical staff is available.|El personal médico está disponible."
+  },
+  {
+    "en": "We will get you help.",
+    "es": "Le ayudaremos.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "We will get you help.|Le ayudaremos."
+  },
+  {
+    "en": "Put down the weapon.",
+    "es": "Suelte el arma.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Put down the weapon.|Suelte el arma."
+  },
+  {
+    "en": "Step away from the edge.",
+    "es": "Aléjese del borde.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Step away from the edge.|Aléjese del borde."
+  },
+  {
+    "en": "I respect you.",
+    "es": "Lo respeto.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "I respect you.|Lo respeto."
+  },
+  {
+    "en": "You will be treated fairly.",
+    "es": "Será tratado justamente.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "You will be treated fairly.|Será tratado justamente."
+  },
+  {
+    "en": "Your concerns will be heard.",
+    "es": "Sus preocupaciones serán escuchadas.",
+    "region": "",
+    "trade": "De-escalation",
+    "id": "Your concerns will be heard.|Sus preocupaciones serán escuchadas."
+  },
+  {
+    "en": "Where are you from?",
+    "es": "¿De dónde es?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Where are you from?|¿De dónde es?"
+  },
+  {
+    "en": "How long have you lived here?",
+    "es": "¿Cuánto tiempo ha vivido aquí?",
+    "region": "",
+    "trade": "Questions",
+    "id": "How long have you lived here?|¿Cuánto tiempo ha vivido aquí?"
+  },
+  {
+    "en": "Do you have family in the area?",
+    "es": "¿Tiene familia en el área?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Do you have family in the area?|¿Tiene familia en el área?"
+  },
+  {
+    "en": "What is your employment?",
+    "es": "¿Cuál es su empleo?",
+    "region": "",
+    "trade": "Questions",
+    "id": "What is your employment?|¿Cuál es su empleo?"
+  },
+  {
+    "en": "Where do you work?",
+    "es": "¿Dónde trabaja?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Where do you work?|¿Dónde trabaja?"
+  },
+  {
+    "en": "How long have you worked there?",
+    "es": "¿Cuánto tiempo ha trabajado allí?",
+    "region": "",
+    "trade": "Questions",
+    "id": "How long have you worked there?|¿Cuánto tiempo ha trabajado allí?"
+  },
+  {
+    "en": "Who is your employer?",
+    "es": "¿Quién es su empleador?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Who is your employer?|¿Quién es su empleador?"
+  },
+  {
+    "en": "Do you drink alcohol?",
+    "es": "¿Bebe alcohol?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Do you drink alcohol?|¿Bebe alcohol?"
+  },
+  {
+    "en": "How often do you drink?",
+    "es": "¿Con qué frecuencia bebe?",
+    "region": "",
+    "trade": "Questions",
+    "id": "How often do you drink?|¿Con qué frecuencia bebe?"
+  },
+  {
+    "en": "How much do you drink?",
+    "es": "¿Cuánto bebe?",
+    "region": "",
+    "trade": "Questions",
+    "id": "How much do you drink?|¿Cuánto bebe?"
+  },
+  {
+    "en": "When was your last drink?",
+    "es": "¿Cuándo fue su última bebida?",
+    "region": "",
+    "trade": "Questions",
+    "id": "When was your last drink?|¿Cuándo fue su última bebida?"
+  },
+  {
+    "en": "Have you ever used drugs?",
+    "es": "¿Alguna vez ha usado drogas?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Have you ever used drugs?|¿Alguna vez ha usado drogas?"
+  },
+  {
+    "en": "What drugs have you used?",
+    "es": "¿Qué drogas ha usado?",
+    "region": "",
+    "trade": "Questions",
+    "id": "What drugs have you used?|¿Qué drogas ha usado?"
+  },
+  {
+    "en": "How often do you use drugs?",
+    "es": "¿Con qué frecuencia usa drogas?",
+    "region": "",
+    "trade": "Questions",
+    "id": "How often do you use drugs?|¿Con qué frecuencia usa drogas?"
+  },
+  {
+    "en": "When did you last use drugs?",
+    "es": "¿Cuándo fue la última vez que usó drogas?",
+    "region": "",
+    "trade": "Questions",
+    "id": "When did you last use drugs?|¿Cuándo fue la última vez que usó drogas?"
+  },
+  {
+    "en": "Are you addicted?",
+    "es": "¿Está adicto?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Are you addicted?|¿Está adicto?"
+  },
+  {
+    "en": "Do you need treatment?",
+    "es": "¿Necesita tratamiento?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Do you need treatment?|¿Necesita tratamiento?"
+  },
+  {
+    "en": "Have you been arrested before?",
+    "es": "¿Ha sido arrestado antes?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Have you been arrested before?|¿Ha sido arrestado antes?"
+  },
+  {
+    "en": "How many times?",
+    "es": "¿Cuántas veces?",
+    "region": "",
+    "trade": "Questions",
+    "id": "How many times?|¿Cuántas veces?"
+  },
+  {
+    "en": "What were the charges?",
+    "es": "¿Cuáles fueron los cargos?",
+    "region": "",
+    "trade": "Questions",
+    "id": "What were the charges?|¿Cuáles fueron los cargos?"
+  },
+  {
+    "en": "Have you been convicted?",
+    "es": "¿Ha sido condenado?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Have you been convicted?|¿Ha sido condenado?"
+  },
+  {
+    "en": "Are you on probation?",
+    "es": "¿Está en libertad supervisada?",
+    "region": "Mexico: ¿Está en libertad condicional?",
+    "trade": "Questions",
+    "id": "Are you on probation?|¿Está en libertad supervisada?"
+  },
+  {
+    "en": "Are you on parole?",
+    "es": "¿Está en libertad condicional?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Are you on parole?|¿Está en libertad condicional?"
+  },
+  {
+    "en": "When does your probation end?",
+    "es": "¿Cuándo termina su libertad supervisada?",
+    "region": "",
+    "trade": "Questions",
+    "id": "When does your probation end?|¿Cuándo termina su libertad supervisada?"
+  },
+  {
+    "en": "Where were you last night?",
+    "es": "¿Dónde estuvo anoche?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Where were you last night?|¿Dónde estuvo anoche?"
+  },
+  {
+    "en": "What were you doing?",
+    "es": "¿Qué estaba haciendo?",
+    "region": "",
+    "trade": "Questions",
+    "id": "What were you doing?|¿Qué estaba haciendo?"
+  },
+  {
+    "en": "Who were you with?",
+    "es": "¿Con quién estaba?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Who were you with?|¿Con quién estaba?"
+  },
+  {
+    "en": "Do you know the victim?",
+    "es": "¿Conoce a la víctima?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Do you know the victim?|¿Conoce a la víctima?"
+  },
+  {
+    "en": "Have you been to this location before?",
+    "es": "¿Ha estado en este lugar antes?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Have you been to this location before?|¿Ha estado en este lugar antes?"
+  },
+  {
+    "en": "What time did you arrive?",
+    "es": "¿A qué hora llegó?",
+    "region": "",
+    "trade": "Questions",
+    "id": "What time did you arrive?|¿A qué hora llegó?"
+  },
+  {
+    "en": "What time did you leave?",
+    "es": "¿A qué hora se fue?",
+    "region": "",
+    "trade": "Questions",
+    "id": "What time did you leave?|¿A qué hora se fue?"
+  },
+  {
+    "en": "Did you see anything unusual?",
+    "es": "¿Vio algo inusual?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Did you see anything unusual?|¿Vio algo inusual?"
+  },
+  {
+    "en": "Did you hear anything?",
+    "es": "¿Escuchó algo?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Did you hear anything?|¿Escuchó algo?"
+  },
+  {
+    "en": "Can you describe what happened?",
+    "es": "¿Puede describir lo que sucedió?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Can you describe what happened?|¿Puede describir lo que sucedió?"
+  },
+  {
+    "en": "Do you understand the question?",
+    "es": "¿Entiende la pregunta?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Do you understand the question?|¿Entiende la pregunta?"
+  },
+  {
+    "en": "Are you sure?",
+    "es": "¿Está seguro?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Are you sure?|¿Está seguro?"
+  },
+  {
+    "en": "Tell me more.",
+    "es": "Cuénteme más.",
+    "region": "",
+    "trade": "Questions",
+    "id": "Tell me more.|Cuénteme más."
+  },
+  {
+    "en": "Is that correct?",
+    "es": "¿Eso es correcto?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Is that correct?|¿Eso es correcto?"
+  },
+  {
+    "en": "Have you ever had thoughts of hurting others?",
+    "es": "¿Alguna vez ha tenido pensamientos de lastimar a otros?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Have you ever had thoughts of hurting others?|¿Alguna vez ha tenido pensamientos de lastimar a otros?"
+  },
+  {
+    "en": "Have you ever threatened anyone?",
+    "es": "¿Alguna vez ha amenazado a alguien?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Have you ever threatened anyone?|¿Alguna vez ha amenazado a alguien?"
+  },
+  {
+    "en": "Have you ever hit someone?",
+    "es": "¿Alguna vez ha golpeado a alguien?",
+    "region": "",
+    "trade": "Questions",
+    "id": "Have you ever hit someone?|¿Alguna vez ha golpeado a alguien?"
+  },
+  {
+    "en": "Detainee",
+    "es": "el detenido / la detenida",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Detainee|el detenido / la detenida"
+  },
+  {
+    "en": "Date of booking",
+    "es": "fecha de ingreso",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Date of booking|fecha de ingreso"
+  },
+  {
+    "en": "Booking number",
+    "es": "número de ingreso",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Booking number|número de ingreso"
+  },
+  {
+    "en": "Charges",
+    "es": "los cargos",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Charges|los cargos"
+  },
+  {
+    "en": "Property",
+    "es": "la propiedad",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Property|la propiedad"
+  },
+  {
+    "en": "Signature",
+    "es": "la firma",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Signature|la firma"
+  },
+  {
+    "en": "Thumbprint",
+    "es": "la huella dactilar",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Thumbprint|la huella dactilar"
+  },
+  {
+    "en": "Identification",
+    "es": "la identificación",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Identification|la identificación"
+  },
+  {
+    "en": "Driver's license number",
+    "es": "número de licencia de conducir",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Driver's license number|número de licencia de conducir"
+  },
+  {
+    "en": "Physical description",
+    "es": "la descripción física",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Physical description|la descripción física"
+  },
+  {
+    "en": "Height",
+    "es": "la altura",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Height|la altura"
+  },
+  {
+    "en": "Weight",
+    "es": "el peso",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Weight|el peso"
+  },
+  {
+    "en": "Tattoos",
+    "es": "los tatuajes",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Tattoos|los tatuajes"
+  },
+  {
+    "en": "Scars",
+    "es": "las cicatrices",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Scars|las cicatrices"
+  },
+  {
+    "en": "Birthmarks",
+    "es": "los lunares",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Birthmarks|los lunares"
+  },
+  {
+    "en": "Injuries",
+    "es": "las lesiones",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Injuries|las lesiones"
+  },
+  {
+    "en": "Medical alert",
+    "es": "alerta médica",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Medical alert|alerta médica"
+  },
+  {
+    "en": "YES or NO",
+    "es": "SÍ o NO",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "YES or NO|SÍ o NO"
+  },
+  {
+    "en": "Explain",
+    "es": "Explique",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Explain|Explique"
+  },
+  {
+    "en": "What kind?",
+    "es": "¿Qué tipo?",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "What kind?|¿Qué tipo?"
+  },
+  {
+    "en": "Money on your person",
+    "es": "dinero en su persona",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Money on your person|dinero en su persona"
+  },
+  {
+    "en": "Total amount",
+    "es": "cantidad total",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Total amount|cantidad total"
+  },
+  {
+    "en": "Sealed with property",
+    "es": "sellado con la propiedad",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Sealed with property|sellado con la propiedad"
+  },
+  {
+    "en": "$1.00",
+    "es": "$1.00",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "$1.00|$1.00"
+  },
+  {
+    "en": "$5.00",
+    "es": "$5.00",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "$5.00|$5.00"
+  },
+  {
+    "en": "$10.00",
+    "es": "$10.00",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "$10.00|$10.00"
+  },
+  {
+    "en": "$20.00",
+    "es": "$20.00",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "$20.00|$20.00"
+  },
+  {
+    "en": "$50.00",
+    "es": "$50.00",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "$50.00|$50.00"
+  },
+  {
+    "en": "$100.00",
+    "es": "$100.00",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "$100.00|$100.00"
+  },
+  {
+    "en": "Wallet",
+    "es": "la cartera",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Wallet|la cartera"
+  },
+  {
+    "en": "Keys",
+    "es": "las llaves",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Keys|las llaves"
+  },
+  {
+    "en": "Watch",
+    "es": "el reloj",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Watch|el reloj"
+  },
+  {
+    "en": "Ring",
+    "es": "el anillo",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Ring|el anillo"
+  },
+  {
+    "en": "Necklace",
+    "es": "el collar",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Necklace|el collar"
+  },
+  {
+    "en": "Bracelet",
+    "es": "la pulsera",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Bracelet|la pulsera"
+  },
+  {
+    "en": "Phone",
+    "es": "el teléfono",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Phone|el teléfono"
+  },
+  {
+    "en": "Sunglasses",
+    "es": "las gafas de sol",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Sunglasses|las gafas de sol"
+  },
+  {
+    "en": "Shoes",
+    "es": "los zapatos",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Shoes|los zapatos"
+  },
+  {
+    "en": "Belt",
+    "es": "el cinturón",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Belt|el cinturón"
+  },
+  {
+    "en": "Jacket",
+    "es": "la chaqueta",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Jacket|la chaqueta"
+  },
+  {
+    "en": "Backpack",
+    "es": "la mochila",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Backpack|la mochila"
+  },
+  {
+    "en": "Other items",
+    "es": "otros artículos",
+    "region": "",
+    "trade": "Paperwork",
+    "id": "Other items|otros artículos"
+  },
+  {
+    "en": "My name is Officer...",
+    "es": "Mi nombre es el oficial...",
+    "region": "",
+    "trade": "Phrases",
+    "id": "My name is Officer...|Mi nombre es el oficial..."
+  },
+  {
+    "en": "I am here to help.",
+    "es": "Estoy aquí para ayudar.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "I am here to help.|Estoy aquí para ayudar."
+  },
+  {
+    "en": "Thank you for your cooperation.",
+    "es": "Gracias por su cooperación.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Thank you for your cooperation.|Gracias por su cooperación."
+  },
+  {
+    "en": "Do you speak English?",
+    "es": "¿Habla inglés?",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Do you speak English?|¿Habla inglés?"
+  },
+  {
+    "en": "I speak a little Spanish.",
+    "es": "Hablo un poco de español.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "I speak a little Spanish.|Hablo un poco de español."
+  },
+  {
+    "en": "Speak slowly, please.",
+    "es": "Hable lentamente, por favor.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Speak slowly, please.|Hable lentamente, por favor."
+  },
+  {
+    "en": "I do not understand.",
+    "es": "No entiendo.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "I do not understand.|No entiendo."
+  },
+  {
+    "en": "Can you repeat that?",
+    "es": "¿Puede repetir eso?",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Can you repeat that?|¿Puede repetir eso?"
+  },
+  {
+    "en": "You are under arrest.",
+    "es": "Está bajo arresto.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "You are under arrest.|Está bajo arresto."
+  },
+  {
+    "en": "You are being detained.",
+    "es": "Está siendo detenido.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "You are being detained.|Está siendo detenido."
+  },
+  {
+    "en": "This is for your safety and ours.",
+    "es": "Esto es por su seguridad y la nuestra.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "This is for your safety and ours.|Esto es por su seguridad y la nuestra."
+  },
+  {
+    "en": "You have been charged with...",
+    "es": "Ha sido acusado de...",
+    "region": "",
+    "trade": "Phrases",
+    "id": "You have been charged with...|Ha sido acusado de..."
+  },
+  {
+    "en": "You will appear before a judge.",
+    "es": "Comparecerá ante un juez.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "You will appear before a judge.|Comparecerá ante un juez."
+  },
+  {
+    "en": "You will be booked.",
+    "es": "Será registrado.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "You will be booked.|Será registrado."
+  },
+  {
+    "en": "Your belongings will be inventoried.",
+    "es": "Sus pertenencias serán inventariadas.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Your belongings will be inventoried.|Sus pertenencias serán inventariadas."
+  },
+  {
+    "en": "You will receive a receipt.",
+    "es": "Recibirá un recibo.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "You will receive a receipt.|Recibirá un recibo."
+  },
+  {
+    "en": "If you need medical attention, tell an officer.",
+    "es": "Si necesita atención médica, dígale a un oficial.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "If you need medical attention, tell an officer.|Si necesita atención médica, dígale a un oficial."
+  },
+  {
+    "en": "We have medical staff on site.",
+    "es": "Tenemos personal médico en el lugar.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "We have medical staff on site.|Tenemos personal médico en el lugar."
+  },
+  {
+    "en": "Do not delay reporting an illness.",
+    "es": "No retrase el informe de una enfermedad.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Do not delay reporting an illness.|No retrase el informe de una enfermedad."
+  },
+  {
+    "en": "This is the booking area.",
+    "es": "Esta es el área de ingreso.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "This is the booking area.|Esta es el área de ingreso."
+  },
+  {
+    "en": "The cafeteria is down this hall.",
+    "es": "La cafetería está por este pasillo.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "The cafeteria is down this hall.|La cafetería está por este pasillo."
+  },
+  {
+    "en": "The medical unit is to the right.",
+    "es": "La unidad médica está a la derecha.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "The medical unit is to the right.|La unidad médica está a la derecha."
+  },
+  {
+    "en": "The phones are here.",
+    "es": "Los teléfonos están aquí.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "The phones are here.|Los teléfonos están aquí."
+  },
+  {
+    "en": "Respect other inmates.",
+    "es": "Respete a otros internos.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Respect other inmates.|Respete a otros internos."
+  },
+  {
+    "en": "Do not start fights.",
+    "es": "No inicie peleas.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Do not start fights.|No inicie peleas."
+  },
+  {
+    "en": "Violence will not be tolerated.",
+    "es": "La violencia no será tolerada.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Violence will not be tolerated.|La violencia no será tolerada."
+  },
+  {
+    "en": "Obey all staff members.",
+    "es": "Obedezca a todos los miembros del personal.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Obey all staff members.|Obedezca a todos los miembros del personal."
+  },
+  {
+    "en": "Report problems to staff.",
+    "es": "Informe los problemas al personal.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Report problems to staff.|Informe los problemas al personal."
+  },
+  {
+    "en": "Breaking rules has consequences.",
+    "es": "Romper las reglas tiene consecuencias.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Breaking rules has consequences.|Romper las reglas tiene consecuencias."
+  },
+  {
+    "en": "You can lose privileges.",
+    "es": "Puede perder privilegios.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "You can lose privileges.|Puede perder privilegios."
+  },
+  {
+    "en": "Serious violations result in disciplinary action.",
+    "es": "Las infracciones graves resultan en acciones disciplinarias.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Serious violations result in disciplinary action.|Las infracciones graves resultan en acciones disciplinarias."
+  },
+  {
+    "en": "Contraband is prohibited.",
+    "es": "Los artículos prohibidos están prohibidos.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Contraband is prohibited.|Los artículos prohibidos están prohibidos."
+  },
+  {
+    "en": "Smuggling contraband is a crime.",
+    "es": "Contrabandear artículos prohibidos es un crimen.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Smuggling contraband is a crime.|Contrabandear artículos prohibidos es un crimen."
+  },
+  {
+    "en": "No weapons are allowed.",
+    "es": "No se permiten armas.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "No weapons are allowed.|No se permiten armas."
+  },
+  {
+    "en": "No drugs or alcohol.",
+    "es": "Sin drogas ni alcohol.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "No drugs or alcohol.|Sin drogas ni alcohol."
+  },
+  {
+    "en": "In case of emergency, alert staff immediately.",
+    "es": "En caso de emergencia, alerte al personal inmediatamente.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "In case of emergency, alert staff immediately.|En caso de emergencia, alerte al personal inmediatamente."
+  },
+  {
+    "en": "Do not panic.",
+    "es": "No entre en pánico.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Do not panic.|No entre en pánico."
+  },
+  {
+    "en": "Follow staff instructions during an emergency.",
+    "es": "Siga las instrucciones del personal durante una emergencia.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Follow staff instructions during an emergency.|Siga las instrucciones del personal durante una emergencia."
+  },
+  {
+    "en": "Fire alarm means evacuate.",
+    "es": "La alarma de incendio significa evacuar.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Fire alarm means evacuate.|La alarma de incendio significa evacuar."
+  },
+  {
+    "en": "Do you have questions?",
+    "es": "¿Tiene preguntas?",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Do you have questions?|¿Tiene preguntas?"
+  },
+  {
+    "en": "Sign here to acknowledge you received these rules.",
+    "es": "Firme aquí para reconocer que recibió estas reglas.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Sign here to acknowledge you received these rules.|Firme aquí para reconocer que recibió estas reglas."
+  },
+  {
+    "en": "Welcome to the facility.",
+    "es": "Bienvenido al establecimiento.",
+    "region": "",
+    "trade": "Phrases",
+    "id": "Welcome to the facility.|Bienvenido al establecimiento."
+  }
+]
