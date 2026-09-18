@@ -36,7 +36,7 @@ The repo root keeps the **web reference** `index.html` (behavior/content source 
 | Stats: streak, totals, box gauge | Done |
 | Feedback → email `james.corby.maupin@gmail.com` | Done |
 | Offline-only runtime after install | Done |
-| Privacy policy URL | Host or add `privacy.html` before submit |
+| Privacy policy URL | `privacy.html` in repo → host at corbymaupin.github.io/law-enforcement-spanish/privacy.html |
 
 ---
 
@@ -75,6 +75,6 @@ Bump `versionCode` on every Play upload; bump `versionName` for user-visible rel
 ## Next steps after this scaffold
 
 1. Capture store screenshots from a debug/release install.
-2. Add/host privacy policy (on-device storage wording).
+2. Enable GitHub Pages (or host) so privacy URL resolves: `.../law-enforcement-spanish/privacy.html`.
 3. Create upload keystore; enable Play App Signing.
 4. Internal test → priced production + promo codes.

@@ -6,7 +6,7 @@ intake, booking, and in-facility interactions.
 
 **Developer:** Applied Solutions Lab  
 **Play package id:** `com.corbymaupin.lespanish` (see `android/README.md`)  
-**Price (planned):** $3.99 one-time — classmate access via Play Console promo codes  
+**Price:** $1.99 one-time — classmate access via Play Console promo codes  
 **Version:** 1.0.0
 
 ## Native Android (Play)
