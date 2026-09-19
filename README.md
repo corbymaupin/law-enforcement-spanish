@@ -23,7 +23,7 @@ Vocabulary: 295 cards across Intake, Medical, Rights, Commands, Facility,
 De-escalation, Questions, Paperwork, Phrases — loaded from
 `android/app/src/main/assets/terms.json` (exported from web `SEED_TERMS`).
 
-Release notes: [`PLAY_RELEASE.md`](PLAY_RELEASE.md).
+Release notes: [`PLAY_RELEASE.md`](PLAY_RELEASE.md). Sideload: [`INSTALL.md`](INSTALL.md). Play checklist: [`PLAY_CHECKLIST.md`](PLAY_CHECKLIST.md).
 
 ## Web reference
 
